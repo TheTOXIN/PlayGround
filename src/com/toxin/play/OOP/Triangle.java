@@ -18,4 +18,9 @@ public class Triangle extends Figure implements RotateFigure {
     public void rotate(int x, int y) {
         System.out.println("Rotating triangle");
     }
+
+    @Override
+    void transform() {
+        System.out.println("TRANSFORM - TRIANGLE");
+    }
 }

@@ -26,4 +26,8 @@ public abstract class Figure {
     }
 
     abstract void draw();
+
+    void transform() {
+        System.out.println("TRANSFORM_DEFAULT");
+    }
 }

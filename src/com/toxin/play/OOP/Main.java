@@ -31,6 +31,7 @@ public class Main {
             if (figure instanceof RotateFigure) {
                 ((RotateFigure) figure).rotate(7, 7);
             }
+            figure.transform();
         }
     }
 }
