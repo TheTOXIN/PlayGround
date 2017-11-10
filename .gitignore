@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/inspectionProfiles/
+.idea/vcs.xml
+.idea/workspace.xml
+out/
+src/com/toxin/play/BigTaskJavaRush/2048/
+src/com/toxin/play/BigTaskJavaRush/Archiver/
+src/com/toxin/play/BigTaskJavaRush/Chat/
+src/com/toxin/play/BigTaskJavaRush/HTML_Editor/
+src/com/toxin/play/BigTaskJavaRush/MVC/
+src/com/toxin/play/BigTaskJavaRush/Refactoring/
