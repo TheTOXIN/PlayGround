@@ -84,6 +84,8 @@ public class HashMD5 {
                 X[w] = new BigInteger(word).intValue();
             }
 
+            int[] ABCD = { A, B, C, D };
+
             int AA = A;
             int BB = B;
             int CC = C;
@@ -91,37 +93,15 @@ public class HashMD5 {
 
             for (int i = 0; i < 64; i++) {
                 int round = i >>> 4;
-                int cycle;
+                int cycle = i % 4;
 
-                switch (round) {
-                    case 0:
-                        cycle = i % 4;
-                        if (cycle == 0) for (int x : X) A = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        else if (cycle == 1) for (int x : X) B = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        else if (cycle == 2) for (int x : X) C = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        else if (cycle == 3) for (int x : X) D = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        break;
-                    case 1:
-                        cycle = i % 4;
-                        if (cycle == 0) for (int x : X) A = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        else if (cycle == 1) for (int x : X) B = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        else if (cycle == 2) for (int x : X) C = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        else if (cycle == 3) for (int x : X) D = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        break;
-                    case 2:
-                        cycle = i % 4;
-                        if (cycle == 0) for (int x : X) A = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        else if (cycle == 1) for (int x : X) B = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        else if (cycle == 2) for (int x : X) C = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        else if (cycle == 3) for (int x : X) D = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        break;
-                    case 3:
-                        cycle = i % 4;
-                        if (cycle == 0) for (int x : X) A = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        else if (cycle == 1) for (int x : X) B = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        else if (cycle == 2) for (int x : X) C = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        else if (cycle == 3) for (int x : X) D = B + (A + funs[round].fun(B, C, D) + x + T[i] << S[round][cycle]);
-                        break;
+                for (int j = 0; j < X.length; j++) {
+                    ABCD[cycle] = B + (A + funs[round].fun(B, C, D) + X[j] + T[i] << S[round][cycle]);
+
+                    A = ABCD[0];
+                    B = ABCD[1];
+                    C = ABCD[2];
+                    D = ABCD[3];
                 }
             }
 
