@@ -1,13 +1,24 @@
 package com.toxin.play.MD5;
 
+import com.sun.org.apache.xerces.internal.impl.dv.util.HexBin;
 import org.apache.commons.lang.ArrayUtils;
 
 import java.math.BigInteger;
+import java.util.Random;
 
 public class HashMD5 {
 
+    private static String hashTest = "C1E760565148F3DEA79AE087DDB157FF";
+    private static String dataTest = "Hello MD5!!!";
+
+    private static Random rand = new Random();
+
     public static void main(String[] args) {
-        System.out.println(new HashMD5().hash("Hello MD5!!!"));
+        HashMD5 md5 = new HashMD5();
+
+        String hash = md5.hash(dataTest);
+
+        if (hashTest.equals(hash)) System.out.println(hash);
     }
 
     private String hash(String data) {
@@ -64,30 +75,41 @@ public class HashMD5 {
             int CC = C;
             int DD = D;
 
-            int i = 0;
-
-            for (int k = 0; k < X.length; k++) {
-                int S = X[k] % (k + i + 1);
-                A = B + (A + funF(B, C, D) + X[k] + T[i] << S);
-                i++;
-            }
-
-            for (int k = 0; k < X.length; k++) {
-                int S = X[k] % (k + i + 1);
-                A = B + (A + funG(B, C, D) + X[k] + T[i] << S);
-                i++;
-            }
-
-            for (int k = 0; k < X.length; k++) {
-                int S = X[k] % (k + i + 1);
-                A = B + (A + funH(B, C, D) + X[k] + T[i] << S);
-                i++;
-            }
-
-            for (int k = 0; k < X.length; k++) {
-                int S = X[k] % (k + i + 1);
-                A = B + (A + funI(B, C, D) + X[k] + T[i] << S);
-                i++;
+            for (int i = 0; i < 64; i++) {
+                switch (i >>> 4) {
+                    case 0:
+                        switch (i % 4) {
+                            case 0: for (int x : X) A = B + (A + funF(B, C, D) + x + T[i] << 7); break;
+                            case 1: for (int x : X) B = B + (A + funF(B, C, D) + x + T[i] << 12); break;
+                            case 2: for (int x : X) C = B + (A + funF(B, C, D) + x + T[i] << 17); break;
+                            case 3: for (int x : X) D = B + (A + funF(B, C, D) + x + T[i] << 22); break;
+                        }
+                        break;
+                    case 1:
+                        switch (i % 4) {
+                            case 0: for (int x : X) A = B + (A + funG(B, C, D) + x + T[i] << 5); break;
+                            case 1: for (int x : X) B = B + (A + funG(B, C, D) + x + T[i] << 9); break;
+                            case 2: for (int x : X) C = B + (A + funG(B, C, D) + x + T[i] << 14); break;
+                            case 3: for (int x : X) D = B + (A + funG(B, C, D) + x + T[i] << 20); break;
+                        }
+                        break;
+                    case 2:
+                        switch (i % 4) {
+                            case 0: for (int x : X) A = B + (A + funH(B, C, D) + x + T[i] << 4); break;
+                            case 1: for (int x : X) B = B + (A + funH(B, C, D) + x + T[i] << 11); break;
+                            case 2: for (int x : X) C = B + (A + funH(B, C, D) + x + T[i] << 16); break;
+                            case 3: for (int x : X) D = B + (A + funH(B, C, D) + x + T[i] << 23); break;
+                        }
+                        break;
+                    case 3:
+                        switch (i % 4) {
+                            case 0: for (int x : X) A = B + (A + funI(B, C, D) + x + T[i] << 6); break;
+                            case 1: for (int x : X) B = B + (A + funI(B, C, D) + x + T[i] << 10); break;
+                            case 2: for (int x : X) C = B + (A + funI(B, C, D) + x + T[i] << 15); break;
+                            case 3: for (int x : X) D = B + (A + funI(B, C, D) + x + T[i] << 21); break;
+                        }
+                        break;
+                }
             }
 
             A = AA + A;
@@ -103,12 +125,12 @@ public class HashMD5 {
         byte[] bytesC = BigInteger.valueOf(C).toByteArray();
         byte[] bytesD = BigInteger.valueOf(D).toByteArray();
 
-        System.out.println(ArrayUtils.toString(bytesA));
-        System.out.println(ArrayUtils.toString(bytesB));
-        System.out.println(ArrayUtils.toString(bytesC));
-        System.out.println(ArrayUtils.toString(bytesD));
+        String hashA = HexBin.encode(bytesA);
+        String hashB = HexBin.encode(bytesB);
+        String hashC = HexBin.encode(bytesC);
+        String hashD = HexBin.encode(bytesD);
 
-        return "";
+        return hashA + hashB + hashC + hashD;
     }
 
     private int funF(int X, int Y, int Z) {
