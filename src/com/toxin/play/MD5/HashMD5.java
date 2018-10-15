@@ -59,6 +59,20 @@ public class HashMD5 {
             T[i] = (int) (Math.pow(2, 32) * Math.abs(Math.sin(i)));
         }
 
+        int[][] S = {
+            { 7, 12, 17, 22 },
+            { 5,  9, 14, 20 },
+            { 4, 11, 16, 23 },
+            { 6, 10, 15, 21 }
+        };
+
+        FUN[] funs = {
+            (X, Y, Z) -> (X & Y) | (~X & Z),
+            (X, Y, Z) -> (X & Z) | (~Z & Y),
+            (X, Y, Z) -> (X ^ Y ^ Z),
+            (X, Y, Z) -> (Y ^ (~Z | X))
+        };
+
         //STEP4
 
         for (int b = 0; b < bytes.length; b += 64) {
@@ -75,38 +89,45 @@ public class HashMD5 {
             int CC = C;
             int DD = D;
 
+            int cycle;
+
             for (int i = 0; i < 64; i++) {
-                switch (i >>> 4) {
+                int round = i >>> 4;
+                switch (round) {
                     case 0:
-                        switch (i % 4) {
-                            case 0: for (int x : X) A = B + (A + funF(B, C, D) + x + T[i] << 7); break;
-                            case 1: for (int x : X) B = B + (A + funF(B, C, D) + x + T[i] << 12); break;
-                            case 2: for (int x : X) C = B + (A + funF(B, C, D) + x + T[i] << 17); break;
-                            case 3: for (int x : X) D = B + (A + funF(B, C, D) + x + T[i] << 22); break;
+                        cycle = i % 4;
+                        switch (cycle) {
+                            case 0: for (int x : X) A = B + (A + funF(B, C, D) + x + T[i] << S[round][cycle]); break;
+                            case 1: for (int x : X) B = B + (A + funF(B, C, D) + x + T[i] << S[round][cycle]); break;
+                            case 2: for (int x : X) C = B + (A + funF(B, C, D) + x + T[i] << S[round][cycle]); break;
+                            case 3: for (int x : X) D = B + (A + funF(B, C, D) + x + T[i] << S[round][cycle]); break;
                         }
                         break;
                     case 1:
-                        switch (i % 4) {
-                            case 0: for (int x : X) A = B + (A + funG(B, C, D) + x + T[i] << 5); break;
-                            case 1: for (int x : X) B = B + (A + funG(B, C, D) + x + T[i] << 9); break;
-                            case 2: for (int x : X) C = B + (A + funG(B, C, D) + x + T[i] << 14); break;
-                            case 3: for (int x : X) D = B + (A + funG(B, C, D) + x + T[i] << 20); break;
+                        cycle = i % 4;
+                        switch (cycle) {
+                            case 0: for (int x : X) A = B + (A + funG(B, C, D) + x + T[i] << S[round][cycle]); break;
+                            case 1: for (int x : X) B = B + (A + funG(B, C, D) + x + T[i] << S[round][cycle]); break;
+                            case 2: for (int x : X) C = B + (A + funG(B, C, D) + x + T[i] << S[round][cycle]); break;
+                            case 3: for (int x : X) D = B + (A + funG(B, C, D) + x + T[i] << S[round][cycle]); break;
                         }
                         break;
                     case 2:
-                        switch (i % 4) {
-                            case 0: for (int x : X) A = B + (A + funH(B, C, D) + x + T[i] << 4); break;
-                            case 1: for (int x : X) B = B + (A + funH(B, C, D) + x + T[i] << 11); break;
-                            case 2: for (int x : X) C = B + (A + funH(B, C, D) + x + T[i] << 16); break;
-                            case 3: for (int x : X) D = B + (A + funH(B, C, D) + x + T[i] << 23); break;
+                        cycle = i % 4;
+                        switch (cycle) {
+                            case 0: for (int x : X) A = B + (A + funH(B, C, D) + x + T[i] << S[round][cycle]); break;
+                            case 1: for (int x : X) B = B + (A + funH(B, C, D) + x + T[i] << S[round][cycle]); break;
+                            case 2: for (int x : X) C = B + (A + funH(B, C, D) + x + T[i] << S[round][cycle]); break;
+                            case 3: for (int x : X) D = B + (A + funH(B, C, D) + x + T[i] << S[round][cycle]); break;
                         }
                         break;
                     case 3:
-                        switch (i % 4) {
-                            case 0: for (int x : X) A = B + (A + funI(B, C, D) + x + T[i] << 6); break;
-                            case 1: for (int x : X) B = B + (A + funI(B, C, D) + x + T[i] << 10); break;
-                            case 2: for (int x : X) C = B + (A + funI(B, C, D) + x + T[i] << 15); break;
-                            case 3: for (int x : X) D = B + (A + funI(B, C, D) + x + T[i] << 21); break;
+                        cycle = i % 4;
+                        switch (cycle) {
+                            case 0: for (int x : X) A = B + (A + funI(B, C, D) + x + T[i] << S[round][cycle]); break;
+                            case 1: for (int x : X) B = B + (A + funI(B, C, D) + x + T[i] << S[round][cycle]); break;
+                            case 2: for (int x : X) C = B + (A + funI(B, C, D) + x + T[i] << S[round][cycle]); break;
+                            case 3: for (int x : X) D = B + (A + funI(B, C, D) + x + T[i] << S[round][cycle]); break;
                         }
                         break;
                 }
@@ -147,6 +168,11 @@ public class HashMD5 {
 
     private int funI(int X, int Y, int Z) {
         return Y ^ (~Z | X);
+    }
+
+    @FunctionalInterface
+    private interface FUN {
+        int fun(int X, int Y, int Z);
     }
 
 }
