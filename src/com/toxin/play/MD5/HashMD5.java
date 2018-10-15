@@ -5,6 +5,7 @@ import org.apache.commons.lang.ArrayUtils;
 
 import java.math.BigInteger;
 import java.util.Random;
+import java.util.stream.Stream;
 
 public class HashMD5 {
 
@@ -18,7 +19,7 @@ public class HashMD5 {
 
         String hash = md5.hash(dataTest);
 
-        if (hashTest.equals(hash)) System.out.println(hash);
+        if (hashTest.equals(hash)) System.out.println("CHECK!!!");
     }
 
     private String hash(String data) {
@@ -113,17 +114,16 @@ public class HashMD5 {
 
         //STEP5
 
-        byte[] bytesA = BigInteger.valueOf(A).toByteArray();
-        byte[] bytesB = BigInteger.valueOf(B).toByteArray();
-        byte[] bytesC = BigInteger.valueOf(C).toByteArray();
-        byte[] bytesD = BigInteger.valueOf(D).toByteArray();
+        String hash = Stream.of(A, B, C, D)
+            .map(BigInteger::valueOf)
+            .map(BigInteger::toByteArray)
+            .map(HexBin::encode)
+            .reduce((s1, s2) -> s1 + s2)
+            .orElse("");
 
-        String hashA = HexBin.encode(bytesA);
-        String hashB = HexBin.encode(bytesB);
-        String hashC = HexBin.encode(bytesC);
-        String hashD = HexBin.encode(bytesD);
+        System.out.println(hash);
 
-        return hashA + hashB + hashC + hashD;
+        return hash;
     }
 
     @FunctionalInterface
