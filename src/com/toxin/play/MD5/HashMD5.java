@@ -60,10 +60,10 @@ public class HashMD5 {
         }
 
         int[][] S = {
-            { 7, 12, 17, 22 },
-            { 5,  9, 14, 20 },
-            { 4, 11, 16, 23 },
-            { 6, 10, 15, 21 }
+            {7, 12, 17, 22},
+            {5, 9, 14, 20},
+            {4, 11, 16, 23},
+            {6, 10, 15, 21}
         };
 
         FUN[] funs = {
@@ -89,46 +89,38 @@ public class HashMD5 {
             int CC = C;
             int DD = D;
 
-            int cycle;
-
             for (int i = 0; i < 64; i++) {
                 int round = i >>> 4;
+                int cycle;
+
                 switch (round) {
                     case 0:
                         cycle = i % 4;
-                        switch (cycle) {
-                            case 0: for (int x : X) A = B + (A + funF(B, C, D) + x + T[i] << S[round][cycle]); break;
-                            case 1: for (int x : X) B = B + (A + funF(B, C, D) + x + T[i] << S[round][cycle]); break;
-                            case 2: for (int x : X) C = B + (A + funF(B, C, D) + x + T[i] << S[round][cycle]); break;
-                            case 3: for (int x : X) D = B + (A + funF(B, C, D) + x + T[i] << S[round][cycle]); break;
-                        }
+                        if (cycle == 0) for (int x : X) A = B + (A + funF(B, C, D) + x + T[i] << S[round][cycle]);
+                        else if (cycle == 1) for (int x : X) B = B + (A + funF(B, C, D) + x + T[i] << S[round][cycle]);
+                        else if (cycle == 2) for (int x : X) C = B + (A + funF(B, C, D) + x + T[i] << S[round][cycle]);
+                        else if (cycle == 3) for (int x : X) D = B + (A + funF(B, C, D) + x + T[i] << S[round][cycle]);
                         break;
                     case 1:
                         cycle = i % 4;
-                        switch (cycle) {
-                            case 0: for (int x : X) A = B + (A + funG(B, C, D) + x + T[i] << S[round][cycle]); break;
-                            case 1: for (int x : X) B = B + (A + funG(B, C, D) + x + T[i] << S[round][cycle]); break;
-                            case 2: for (int x : X) C = B + (A + funG(B, C, D) + x + T[i] << S[round][cycle]); break;
-                            case 3: for (int x : X) D = B + (A + funG(B, C, D) + x + T[i] << S[round][cycle]); break;
-                        }
+                        if (cycle == 0) for (int x : X) A = B + (A + funG(B, C, D) + x + T[i] << S[round][cycle]);
+                        else if (cycle == 1) for (int x : X) B = B + (A + funG(B, C, D) + x + T[i] << S[round][cycle]);
+                        else if (cycle == 2) for (int x : X) C = B + (A + funG(B, C, D) + x + T[i] << S[round][cycle]);
+                        else if (cycle == 3) for (int x : X) D = B + (A + funG(B, C, D) + x + T[i] << S[round][cycle]);
                         break;
                     case 2:
                         cycle = i % 4;
-                        switch (cycle) {
-                            case 0: for (int x : X) A = B + (A + funH(B, C, D) + x + T[i] << S[round][cycle]); break;
-                            case 1: for (int x : X) B = B + (A + funH(B, C, D) + x + T[i] << S[round][cycle]); break;
-                            case 2: for (int x : X) C = B + (A + funH(B, C, D) + x + T[i] << S[round][cycle]); break;
-                            case 3: for (int x : X) D = B + (A + funH(B, C, D) + x + T[i] << S[round][cycle]); break;
-                        }
+                        if (cycle == 0) for (int x : X) A = B + (A + funH(B, C, D) + x + T[i] << S[round][cycle]);
+                        else if (cycle == 1) for (int x : X) B = B + (A + funH(B, C, D) + x + T[i] << S[round][cycle]);
+                        else if (cycle == 2) for (int x : X) C = B + (A + funH(B, C, D) + x + T[i] << S[round][cycle]);
+                        else if (cycle == 3) for (int x : X) D = B + (A + funH(B, C, D) + x + T[i] << S[round][cycle]);
                         break;
                     case 3:
                         cycle = i % 4;
-                        switch (cycle) {
-                            case 0: for (int x : X) A = B + (A + funI(B, C, D) + x + T[i] << S[round][cycle]); break;
-                            case 1: for (int x : X) B = B + (A + funI(B, C, D) + x + T[i] << S[round][cycle]); break;
-                            case 2: for (int x : X) C = B + (A + funI(B, C, D) + x + T[i] << S[round][cycle]); break;
-                            case 3: for (int x : X) D = B + (A + funI(B, C, D) + x + T[i] << S[round][cycle]); break;
-                        }
+                        if (cycle == 0) for (int x : X) A = B + (A + funI(B, C, D) + x + T[i] << S[round][cycle]);
+                        else if (cycle == 1) for (int x : X) B = B + (A + funI(B, C, D) + x + T[i] << S[round][cycle]);
+                        else if (cycle == 2) for (int x : X) C = B + (A + funI(B, C, D) + x + T[i] << S[round][cycle]);
+                        else if (cycle == 3) for (int x : X) D = B + (A + funI(B, C, D) + x + T[i] << S[round][cycle]);
                         break;
                 }
             }
