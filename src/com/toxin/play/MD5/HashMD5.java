@@ -54,6 +54,8 @@ public class HashMD5 {
         int C = 0xFEDCBA98;
         int D = 0x76543210;
 
+        int[] ABCD = { A, B, C, D };
+
         int[] T = new int[64];
 
         for (int i = 0; i < T.length; i++) {
@@ -85,12 +87,7 @@ public class HashMD5 {
                 X[w] = new BigInteger(word).intValue();
             }
 
-            int[] ABCD = { A, B, C, D };
-
-            int AA = A;
-            int BB = B;
-            int CC = C;
-            int DD = D;
+            int[] ABCDtmp = ArrayUtils.clone(ABCD);
 
             for (int i = 0; i < 64; i++) {
                 int round = i >>> 4;
@@ -106,10 +103,10 @@ public class HashMD5 {
                 }
             }
 
-            A = AA + A;
-            B = BB + B;
-            C = CC + C;
-            D = DD + D;
+            A = ABCDtmp[0] + A;
+            B = ABCDtmp[1] + B;
+            C = ABCDtmp[2] + C;
+            D = ABCDtmp[3] + D;
         }
 
         //STEP5
