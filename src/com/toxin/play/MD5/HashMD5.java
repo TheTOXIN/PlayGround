@@ -4,7 +4,6 @@ import com.sun.org.apache.xerces.internal.impl.dv.util.HexBin;
 import org.apache.commons.lang.ArrayUtils;
 
 import java.math.BigInteger;
-import java.util.Random;
 import java.util.stream.Stream;
 
 public class HashMD5 {
@@ -12,7 +11,21 @@ public class HashMD5 {
     private static String hashTest = "C1E760565148F3DEA79AE087DDB157FF";
     private static String dataTest = "Hello MD5!!!";
 
-    private static Random rand = new Random();
+    private static final int nA = 0;
+    private static final int nB = 1;
+    private static final int nC = 2;
+    private static final int nD = 3;
+
+    private static final byte ONE = 0x8;
+
+    private static final int BIT_IN_BYTE = 8;
+    private static final int BLOCK_SIZE = 512;
+    private static final int SUB_SIZE = 64;
+    private static final int COUNT_WORD = 16;
+    private static final int WORD_SIZE = 4;
+    private static final int COUNT_ROUND = 4;
+    private static final int T_SIZE = BLOCK_SIZE / BIT_IN_BYTE;
+    private static final int POW = T_SIZE / 2;
 
     public static void main(String[] args) {
         HashMD5 md5 = new HashMD5();
@@ -25,26 +38,30 @@ public class HashMD5 {
     private String hash(String data) {
 
         //STEP 1
-        byte one = 0x8;
 
         byte[] bytes = data.getBytes();
-        bytes = ArrayUtils.add(bytes, one);
+        bytes = ArrayUtils.add(bytes, ONE);
 
         int L = bytes.length * 8;
         int dL = 0;
         int N = 0;
 
         while (dL < L) {
-            dL = 512 * N + 448;
+            dL = BLOCK_SIZE * N + BLOCK_SIZE - SUB_SIZE;
             N++;
         }
 
-        int countNil = (dL - L) / 8;
+        int countNil = (dL - L) / (SUB_SIZE / BIT_IN_BYTE);
         bytes = ArrayUtils.addAll(bytes, new byte[countNil]);
 
         //STEP2
 
-        byte[] subData = ArrayUtils.subarray(data.getBytes(), 0, 8);
+        byte[] subData = ArrayUtils.subarray(
+            data.getBytes(),
+            0,
+            SUB_SIZE / BIT_IN_BYTE
+        );
+
         bytes = ArrayUtils.addAll(bytes, subData);
 
         //STEP3
@@ -54,12 +71,12 @@ public class HashMD5 {
         int C = 0xFEDCBA98;
         int D = 0x76543210;
 
-        int[] ABCD = { A, B, C, D };
+        int[] ABCD = {A, B, C, D};
 
-        int[] T = new int[64];
+        int[] T = new int[T_SIZE];
 
         for (int i = 0; i < T.length; i++) {
-            T[i] = (int) (Math.pow(2, 32) * Math.abs(Math.sin(i)));
+            T[i] = (int) (Math.pow(2, POW) * Math.abs(Math.sin(i)));
         }
 
         int[][] S = {
@@ -78,34 +95,34 @@ public class HashMD5 {
 
         //STEP4
 
-        for (int b = 0; b < bytes.length; b += 64) {
-            byte[] block = ArrayUtils.subarray(bytes, b, b + 64);
-            int[] X = new int[16];
+        for (int b = 0; b < bytes.length; b += BLOCK_SIZE / BIT_IN_BYTE) {
+            byte[] block = ArrayUtils.subarray(bytes, b, b + BLOCK_SIZE / BIT_IN_BYTE);
+            int[] X = new int[COUNT_WORD];
 
             for (int w = 0; w < X.length; w++) {
-                byte[] word = ArrayUtils.subarray(block, w * 4, w * 4 + 4);
+                byte[] word = ArrayUtils.subarray(block, w * WORD_SIZE, w * WORD_SIZE + WORD_SIZE);
                 X[w] = new BigInteger(word).intValue();
             }
 
             int[] ABCDtmp = ArrayUtils.clone(ABCD);
 
-            for (int i = 0; i < 64; i++) {
-                int round = i >>> 4;
-                int cycle = i % 4;
+            for (int i = 0; i < T_SIZE; i++) {
+                int round = i >>> COUNT_ROUND;
+                int cycle = i % COUNT_ROUND;
 
                 for (int j = 0; j < X.length; j++) {
                     ABCD[cycle] = compute(ABCD, funs[round], X[j], T[i], S[round][cycle]);
                 }
             }
 
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < COUNT_ROUND; i++) {
                 ABCD[i] += ABCDtmp[i];
             }
         }
 
         //STEP5
 
-        String hash = Stream.of(ABCD[0], ABCD[1], ABCD[2], ABCD[3])
+        String hash = Stream.of(ABCD[nA], ABCD[nB], ABCD[nC], ABCD[nD])
             .map(BigInteger::valueOf)
             .map(BigInteger::toByteArray)
             .map(HexBin::encode)
@@ -118,7 +135,7 @@ public class HashMD5 {
     }
 
     private int compute(int[] ABCD, FUN f, int X, int T, int S) {
-        return ABCD[1] + (ABCD[0] + f.fun(ABCD[1], ABCD[2], ABCD[3]) + X + T << S);
+        return ABCD[nB] + (ABCD[nA] + f.fun(ABCD[nB], ABCD[nC], ABCD[nD]) + X + T << S);
     }
 
     @FunctionalInterface
