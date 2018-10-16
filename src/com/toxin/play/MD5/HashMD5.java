@@ -94,7 +94,7 @@ public class HashMD5 {
                 int cycle = i % 4;
 
                 for (int j = 0; j < X.length; j++) {
-                    ABCD[cycle] = ABCD[1] + (ABCD[0] + funs[round].fun(ABCD[1], ABCD[2], ABCD[3]) + X[j] + T[i] << S[round][cycle]);
+                    ABCD[cycle] = compute(ABCD, funs[round], X[j], T[i], S[round][cycle]);
                 }
             }
 
@@ -115,6 +115,10 @@ public class HashMD5 {
         System.out.println(hash);
 
         return hash;
+    }
+
+    private int compute(int[] ABCD, FUN f, int X, int T, int S) {
+        return ABCD[1] + (ABCD[0] + f.fun(ABCD[1], ABCD[2], ABCD[3]) + X + T << S);
     }
 
     @FunctionalInterface
