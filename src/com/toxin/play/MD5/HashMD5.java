@@ -94,24 +94,18 @@ public class HashMD5 {
                 int cycle = i % 4;
 
                 for (int j = 0; j < X.length; j++) {
-                    ABCD[cycle] = B + (A + funs[round].fun(B, C, D) + X[j] + T[i] << S[round][cycle]);
-
-                    A = ABCD[0];
-                    B = ABCD[1];
-                    C = ABCD[2];
-                    D = ABCD[3];
+                    ABCD[cycle] = ABCD[1] + (ABCD[0] + funs[round].fun(ABCD[1], ABCD[2], ABCD[3]) + X[j] + T[i] << S[round][cycle]);
                 }
             }
 
-            A = ABCDtmp[0] + A;
-            B = ABCDtmp[1] + B;
-            C = ABCDtmp[2] + C;
-            D = ABCDtmp[3] + D;
+            for (int i = 0; i < 4; i++) {
+                ABCD[i] += ABCDtmp[i];
+            }
         }
 
         //STEP5
 
-        String hash = Stream.of(A, B, C, D)
+        String hash = Stream.of(ABCD[0], ABCD[1], ABCD[2], ABCD[3])
             .map(BigInteger::valueOf)
             .map(BigInteger::toByteArray)
             .map(HexBin::encode)
