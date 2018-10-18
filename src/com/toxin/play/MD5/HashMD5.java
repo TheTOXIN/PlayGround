@@ -26,6 +26,7 @@ public class HashMD5 {
     private static final int COUNT_ROUND = 4;
     private static final int T_SIZE = BLOCK_SIZE / BIT_IN_BYTE;
     private static final int POW = T_SIZE / 2;
+    private static final int HASH_BATCH = 4;
 
     public static void main(String[] args) {
         HashMD5 md5 = new HashMD5();
@@ -33,6 +34,7 @@ public class HashMD5 {
         String hash = md5.hash(dataTest);
 
         if (hashTest.equals(hash)) System.out.println("CHECK!!!");
+        System.out.println(md5.shortHash(hash));
     }
 
     private String hash(String data) {
@@ -132,6 +134,25 @@ public class HashMD5 {
         System.out.println(hash);
 
         return hash;
+    }
+
+    private String shortHash(String hash) {
+        String result = "";
+
+        for (int i = 0; i < hash.length(); i += HASH_BATCH) {
+            int batch = 0;
+
+            for (int j = 0; j < HASH_BATCH; j++) {
+                String hex = String.valueOf(hash.charAt(i));
+                batch += Integer.parseInt(hex, 16);
+            }
+
+            batch /= HASH_BATCH;
+
+            result += Integer.toHexString(batch);
+        }
+
+        return result;
     }
 
     private int compute(int[] ABCD, FUN f, int X, int T, int S) {
