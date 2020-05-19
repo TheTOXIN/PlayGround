@@ -1,6 +1,7 @@
 package com.toxin.play.Stream;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -16,14 +17,14 @@ public class Main {
 
         double average = people.stream()
                 .filter(p -> p.getAge() > 20)
-                .mapToInt(p -> p.getAge())
+                .mapToInt(Person::getAge)
                 .average()
                 .getAsDouble();
 
         people.stream()
                 .filter((Person p) -> (p.getAge() > 20))
-                .sorted((p1, p2) -> p1.getName().compareTo(p2.getName()))
-                .map(p -> p.getName())
+                .sorted(Comparator.comparing(Person::getName))
+                .map(Person::getName)
                 .forEach(System.out::println);
 
         System.out.println("Средний возраст - " + average);

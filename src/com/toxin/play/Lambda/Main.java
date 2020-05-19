@@ -15,15 +15,10 @@ public class Main {
         switcher.addElectricityListener(lamp);
         switcher.addElectricityListener(radio);
 
-        switcher.addElectricityListener(new Electricity() {
-            @Override
-            public void electricityOn(double volt) {
-                System.out.println("Пажар " + volt);
-            }
-        });
+        switcher.addElectricityListener(volt -> System.out.println("Пажар " + volt));
 
         switcher.addElectricityListener((volt) -> System.out.println("Лямбда Пажар - " + volt));
-        switcher.addElectricityListener(volt -> Main.yeahFunctions(volt));
+        switcher.addElectricityListener(Main::yeahFunctions);
 
         switcher.addElectricityListener(System.out::println);
         switcher.addElectricityListener(Main::yeahFunctions);
