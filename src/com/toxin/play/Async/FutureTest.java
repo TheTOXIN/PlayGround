@@ -23,5 +23,12 @@ public class FutureTest {
 
         System.out.println(future.isDone());
         System.out.println(future.get());
+
+        CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(
+            () -> "я из будущего", executor
+        );
+
+        completableFuture.thenAcceptAsync(System.out::println);
+        completableFuture.get();
     }
 }
