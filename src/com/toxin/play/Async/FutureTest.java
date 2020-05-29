@@ -24,11 +24,11 @@ public class FutureTest {
         System.out.println(future.isDone());
         System.out.println(future.get());
 
-        CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(
-            () -> "я из будущего", executor
-        );
+        CompletableFuture completableFuture = CompletableFuture
+            .completedFuture("я из будущего")
+            .exceptionally(Throwable::getMessage)
+            .thenAccept(System.out::println);
 
-        completableFuture.thenAcceptAsync(System.out::println);
-        completableFuture.get();
+        completableFuture.join();
     }
 }
