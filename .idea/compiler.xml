@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="PlayGraund" />
+        <module name="PlayGround" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="play" target="1.5" />
-      <module name="PlayGraund" target="1.8" />
+      <module name="PlayGround" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,7 +2,7 @@
   <artifact type="jar" name="PlayGraund:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/PlayGraund_jar</output-path>
     <root id="archive" name="PlayGraund.jar">
-      <element id="module-output" name="PlayGraund" />
+      <element id="module-output" name="PlayGround" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar" path-in-jar="/" />
     </root>
   </artifact>
