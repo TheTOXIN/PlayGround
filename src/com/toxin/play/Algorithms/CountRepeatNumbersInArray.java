@@ -11,7 +11,7 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class CountRepeateNumbersInArray {
+public class CountRepeatNumbersInArray {
 
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>(List.of(1, 1, 2, 2, 3, 3, 3, 5, 3));
