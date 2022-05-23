@@ -16,18 +16,18 @@ public class CountRepeatNumbersInArray {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>(List.of(1, 1, 2, 2, 3, 3, 3, 5, 3));
 
-        Map<Integer, Long> res = solution_4(list);
+        Map<Integer, Long> res = solution_1(list);
         res.forEach((key, value) -> System.out.println(key + " -> " + value));
     }
 
     public static Map<Integer, Long> solution_1(List<Integer> list) {
         Map<Integer, Long> res = new HashMap<>();
 
-        for (int i = 1; i < list.size(); i++) {
-            if (!res.containsKey(list.get(i))) {
-                res.put(list.get(i), 1L);
+        for (Integer integer : list) {
+            if (!res.containsKey(integer)) {
+                res.put(integer, 1L);
             } else {
-                res.put(list.get(i), res.get(list.get(i)) + 1);
+                res.put(integer, res.get(integer) + 1);
             }
         }
 
@@ -37,8 +37,8 @@ public class CountRepeatNumbersInArray {
     public static Map<Integer, Long> solution_2(List<Integer> list) {
         Map<Integer, Long> res = new HashMap<>();
 
-        for (int i = 1; i < list.size(); i++) {
-            res.merge(list.get(i), 1L, Long::sum);
+        for (Integer integer : list) {
+            res.merge(integer, 1L, Long::sum);
         }
 
         return res;
