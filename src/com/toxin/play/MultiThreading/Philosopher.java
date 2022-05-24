@@ -1,4 +1,4 @@
-package com.toxin.play.Algorithms;
+package com.toxin.play.MultiThreading;
 
 import java.util.concurrent.Semaphore;
 
