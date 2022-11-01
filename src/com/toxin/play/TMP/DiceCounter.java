@@ -17,13 +17,13 @@ public class DiceCounter {
     public static void main(String[] args) throws Exception {
         var work = true;
 
-        KEYBOARD_OBSERVER.start();
-        KeyEvent keyEvent;
-
         Map<String, Integer> result = IntStream.range(0, DICE_SIDE_COUNT)
                 .map(i -> i + 1)
                 .mapToObj(Objects::toString)
                 .collect(Collectors.toMap(Function.identity(), val -> 0));
+
+        KEYBOARD_OBSERVER.start();
+        KeyEvent keyEvent;
 
         while (work) {
             if ((keyEvent = KEYBOARD_OBSERVER.event()) != null) {
@@ -41,12 +41,12 @@ public class DiceCounter {
         }
 
         KEYBOARD_OBSERVER.end();
+        print(result);
+    }
 
+    private static void print(Map<String, Integer> result) {
         System.out.println("DICE STATS:");
-
-        result.forEach((key, val) -> {
-            System.out.println(key + " -> " + val);
-        });
+        result.forEach((key, val) -> System.out.println(key + " -> " + val));
 
         int sum = result.values().stream().mapToInt(Integer::intValue).sum();
         System.out.println("sum = " + sum);
