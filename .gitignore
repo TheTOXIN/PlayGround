@@ -3,6 +3,8 @@
 .idea/inspectionProfiles/
 .idea/vcs.xml
 .idea/workspace.xml
+.idea
+PlayGround.iml
 out/
 src/com/toxin/play/BigTaskJavaRush/2048/
 src/com/toxin/play/BigTaskJavaRush/Archiver/
