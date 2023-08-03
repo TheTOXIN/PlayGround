@@ -1,0 +1,714 @@
+datePattern=yyyy-MM-dd
+datePatternForReport=dd.MM.yyyy
+dateFilterPattern=yyyy-MM-dd
+dateTimePattern=yyyy-MM-dd HH:mm
+dateFormatError=Incorrect format of the date
+dateInTheFutureError=Date cannot be in the future
+dateInThePastError=Incorrect date
+incorrectBirthDate=ÐÐ°ÑÐ° Ð¾ÑÑÑÐ¾Ð¸Ñ Ð¾Ñ ÑÐµÐºÑÑÐµÐ¹ Ð¼ÐµÐ½ÐµÐµ, ÑÐµÐ¼ Ð½Ð° 14 Ð»ÐµÑ
+
+abonClient.internalError.caption=Application runtime error.
+abonClient.operationError.caption=Operational error.
+abonClient.internalError.message=Please make screenshot and contact with help desk.</br>Information for developers: {0}</br>Date and time: {0}
+abonClient.internalError.friendlyMessage=Can't complete the operation.<br>Reason: {0}
+abonClient.internalError.dateTimePattern=yyyy-MM-dd HH:mm:ss
+abonClient.internalError.lostConnection=Connection is lost. Try later.
+abonClient.pageTitle=Reservation of boxes
+
+abonHeader.activityLabel=Reservation of boxes
+
+button.login=Sign in
+button.exit=Exit
+button.close=Close
+button.next=Next step
+button.back=Previous step
+button.save=Save
+button.cancel=Cancel
+button.finish=Finish
+button.Ok=OK
+button.printClaim=Print Claim
+button.printInvoice=Print Invoice
+button.add=Add
+button.upload=Upload
+button.delete=Delete
+button.download=Download
+button.clear=Clear
+button.yes=Yes
+button.no=No
+button.saveAndExit=Save and exit
+button.payOnAccount=Pay on account
+button.paymentAtTheDepartment=Payment at the department
+button.addToClaim=Add to claim
+button.addToClaimShort=Add
+button.removeFromClaim=Remove from claim
+button.removeFromClaimShort=Remove
+button.cancelFin=cancel
+button.fromCancelledToPaid=From Cancelled to Paid
+button.goToBasket=Go to basket
+button.createRequest=Ð¡Ð¾Ð·Ð´Ð°ÑÑ Ð·Ð°ÑÐ²ÐºÑ
+
+main.pageTitle=ÐÐ»Ð°Ð²Ð½Ð°Ñ ÑÑÑÐ°Ð½Ð¸ÑÐ°
+main.header=ÐÐ±Ð¾Ð½Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ Ð¿Ð¾ÑÑÐ¾Ð²ÑÑ ÑÑÐµÐµÐº
+main.contentText=ÐÑÐ±Ð¸ÑÐ°Ð¹ÑÐµ ÑÑÐµÐ¹ÐºÐ¸ Ð¿Ð¾ÑÑÐ¾Ð²Ð¾Ð³Ð¾ ÑÐºÐ°ÑÐ° Ð² Ð±Ð»Ð¸Ð¶Ð°Ð¹ÑÐ¸Ñ<br/>Ðº Ð²Ð°Ð¼ ÐÐÐ¡ Ð¾Ð½Ð»Ð°Ð¹Ð½ Ð¸ Ð·Ð°Ð¿Ð¾Ð»Ð½ÑÐ¹ÑÐµ Ð²ÑÐµ Ð´Ð°Ð½Ð½ÑÐµ Ð½Ð° ÑÐ°Ð¹ÑÐµ
+
+login.singInLabel=Please sign in
+login.login=Login
+login.password=Password
+login.singIn=Sign in
+login.forgot=Forgot?
+login.forgotNotification=Contact system administrator.
+login.failed.caption=Login failed
+login.authentication.failedNotification=Failed to authenticate user. Check login and password.
+login.authorization.failedNotification=Failed to authorize user. User with such login was not found.
+login.authorization.accessDenied=Access denied.
+
+postOfficeCard.boxesTab=Boxes
+postOfficeCard.claimsTab=Claims
+postOfficeCard.claimSearchTab=Claim search
+postOfficeCard.requestsTab=Requests
+postOfficeCard.aapshLockerTab=Lockers AAPSh
+postOfficeCard.eiskTab=EISK
+postOfficeCard.ordinaryMailingsTab=ÐÐ»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð¾ÑÐ¿ÑÐ°Ð²Ð»ÐµÐ½Ð¸Ð¹
+postOfficeCard.boxDeleteDialog.windowTitle=Removing box(es)
+postOfficeCard.boxDeleteDialog.message=Do you really want to remove a box?
+postOfficeCard.proceedButton=to proceed
+postOfficeCard.StatusPaidAdded=Status of claim changed to paid
+postOfficeCard.refuseServiceButton=Sign away
+postOfficeCard.finalizeButtonForOperator=Sign the claim
+postOfficeCard.finalizeButtonForAdmin=Confirm payment
+postOfficeCard.makePaymentButton=Make payment
+postOfficeCard.markAsPaid=Mark as 'Paid'
+postOfficeCard.extendButton=Extend claim
+postOfficeCard.caution.caption=Caution!
+postOfficeCard.caution.timeDifference=Ð Ð´Ð°Ð½Ð½Ð¾Ð¼ ÑÐ¸Ð»Ð¸Ð°Ð»Ðµ {0}{1} {2} Ðº Ð¼Ð¾ÑÐºÐ¾Ð²ÑÐºÐ¾Ð¼Ñ Ð²ÑÐµÐ¼ÐµÐ½Ð¸. ÐÑÐµ Ð´Ð°ÑÑ Ð¿Ð¾ ÑÑÐµÐ¹ÐºÐ°Ð¼ Ð¸ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸ÑÐ¼ ÑÐºÐ°Ð·Ð°Ð½Ñ Ð¿Ð¾ Ð²ÑÐµÐ¼ÐµÐ½Ð¸ ÑÐ¸Ð»Ð¸Ð°Ð»Ð°
+postOfficeCard.caution.timeDifferenceYakutia=Ð Ð´Ð°Ð½Ð½Ð¾Ð¼ ÑÐ¸Ð»Ð¸Ð°Ð»Ðµ +6 - +8 ÑÐ°ÑÐ¾Ð² Ðº Ð¼Ð¾ÑÐºÐ¾Ð²ÑÐºÐ¾Ð¼Ñ Ð²ÑÐµÐ¼ÐµÐ½Ð¸. ÐÑÐµ Ð´Ð°ÑÑ Ð¿Ð¾ ÑÑÐµÐ¹ÐºÐ°Ð¼ Ð¸ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸ÑÐ¼ ÑÐºÐ°Ð·Ð°Ð½Ñ Ð¿Ð¾ Ð²ÑÐµÐ¼ÐµÐ½Ð¸ ÑÐ¸Ð»Ð¸Ð°Ð»Ð°
+
+boxesTab.uploadFileWindow.caption=Attach files to a Box
+boxesTab.uploadLabel.caption=Select file
+boxesTab.uploadMaxSize=2097152
+boxesTab.fileTooLarge=File is too large
+boxesTab.fileNameTooLong=File name too long
+boxesTab.typeNotAllowed=Allowed MIME types are: {0}. Your file has type {1}
+boxesTab.extensionNotAllowed=Ð Ð°ÑÑÐ¸ÑÐµÐ½Ð¸Ðµ ÑÐ°Ð¹Ð»Ð° {0} Ð¾ÑÐ½Ð¾ÑÐ¸ÑÑÑ Ðº Ð·Ð°Ð¿ÑÐµÑÐµÐ½Ð½ÑÐ¼.
+boxesTab.ContentTypeTooLong=Content type {0} too long (> {1})
+boxesTab.fileComment=Comment
+boxesTab.attachedFiles=Attached files
+boxesTab.fullFileName=Full name of the file
+boxesTab.boxName=Name of box
+boxesTab.activeClaim=â of claim
+boxesTab.createReq.button.inactive=ÐÐ»Ñ ÑÑÐ°ÑÑÑÐ° ÑÑÐ¾Ð¹ ÐÐ¯ Ð½ÐµÑ Ð´Ð¾ÑÑÑÐ¿Ð½ÑÑ ÑÐ¸Ð¿Ð¾Ð² Ð·Ð°ÑÐ²Ð¾Ðº
+boxesTab.organizationAbbreviations=ÐÐÐ,ÐÐÐ,ÐÐ,ÐÐ,ÐÐÐ
+boxesTab.clientType.changed=ÐÐµÐ´Ð¾Ð¿ÑÑÑÐ¸Ð¼Ð¾Ðµ Ð¸Ð¼Ñ ÑÑÐµÐ¹ÐºÐ¸ Ð´Ð»Ñ Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾ ÑÐ¸Ð¿Ð° ÐºÐ»Ð¸ÐµÐ½ÑÐ°. Ð¡Ð¼ ÑÐ°Ð·Ð´ÐµÐ» 3.12 ÐÐ¾ÑÑÐ´ÐºÐ° Ð¾ÐºÐ°Ð·Ð°Ð½Ð¸Ñ ÑÑÐ»ÑÐ³Ð¸.
+boxesTab.uncensored=ÐÐµÐ´Ð¾Ð¿ÑÑÑÐ¸Ð¼Ð¾Ðµ Ð¸Ð¼Ñ ÑÑÐµÐ¹ÐºÐ¸. Ð¡Ð¼ ÑÐ°Ð·Ð´ÐµÐ» 3.12 ÐÐ¾ÑÑÐ´ÐºÐ° Ð¾ÐºÐ°Ð·Ð°Ð½Ð¸Ñ ÑÑÐ»ÑÐ³Ð¸.
+
+boxesTab.boxInfoWindow.additionalServices=Additional services
+boxesTab.boxInfoWindow.auditButton=History
+boxesTab.boxInfoWindow.audit.filename=audit_boxes_{0}_v_{1}_{2}.xls
+
+boxesTab.boxInfoWindow.goToActiveClaimButton=Ð Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ
+boxesTab.boxInfoWindow.seeTroublesButton=ÐÐ°Ð»Ð¾Ð±Ñ
+
+apshBoxStateWindow.overflow=ÐÐµÑÐµÐ¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ
+apshBoxStateWindow.cleaningRequire=Ð¢ÑÐµÐ±ÑÐµÑÑÑ ÑÐ±Ð¾ÑÐºÐ°
+apshBoxStateWindow.doorDefective=Ð¡Ð»Ð¾Ð¼Ð°Ð½Ð° Ð´Ð²ÐµÑÑÐ°
+apshBoxStateWindow.other=ÐÑÑÐ³Ð¾Ðµ
+apshBoxStateWindow.manipulator=ÐÑÐ¾ Ð¾ÑÐ¾ÑÐ¼Ð¸Ð»
+
+boxesTab.addBoxWindow.caption=Add box
+boxesTab.addBoxWindow.clarification.batch=ÐÐ½Ð¸Ð¼Ð°Ð½Ð¸Ðµ!<br> ÐÐ°Ð½Ð½ÑÐ¹ ÑÑÐ½ÐºÑÐ¸Ð¾Ð½Ð°Ð» ÑÐ¾Ð·Ð´Ð°ÑÑ Ð½Ð¾Ð²ÑÑ ÑÑÐµÐ¹ÐºÑ Ð² <br>ÑÑÐ°ÑÑÑÐµ Â«Ð¡Ð²Ð¾Ð±Ð¾Ð´Ð½Ð°Â» Ð¸ Ð°Ð²ÑÐ¾Ð¼Ð°ÑÐ¸ÑÐµÑÐºÐ¸ Ð¿ÑÐ¸ÑÐ²Ð°Ð¸Ð²Ð°ÐµÑ <br>ÐµÐ¹ Ð½Ð¾Ð¼ÐµÑ.<br> ÐÐ¾Ð¼ÐµÑ Ð¾Ð¿ÑÐµÐ´ÐµÐ»ÑÐµÑÑÑ Ð¿ÑÐ¸Ð±Ð°Ð²Ð»ÐµÐ½Ð¸ÐµÐ¼ 1 Ðº ÑÐ¶Ðµ <br>ÑÑÑÐµÑÑÐ²ÑÑÑÐµÐ¼Ñ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑÐ½Ð¾Ð¼Ñ Ð½Ð¾Ð¼ÐµÑÑ ÑÑÐµÐ¹ÐºÐ¸ Ð² <br>ÑÐµÐºÑÑÐµÐ¼ ÐÐÐ¡.
+boxesTab.addBoxWindow.clarification.desiredNumber=ÐÐ½Ð¸Ð¼Ð°Ð½Ð¸Ðµ!<br> ÐÐ°Ð½Ð½ÑÐ¹ ÑÑÐ½ÐºÑÐ¸Ð¾Ð½Ð°Ð» ÑÐ¾Ð·Ð´Ð°ÑÑ Ð½Ð¾Ð²ÑÑ ÑÑÐµÐ¹ÐºÑ Ð² <br>ÑÑÐ°ÑÑÑÐµ Â«Ð¡Ð²Ð¾Ð±Ð¾Ð´Ð½Ð°Â» Ð¸ Ð¿ÑÐ¸ÑÐ²Ð°Ð¸Ð²Ð°ÐµÑ ÑÐºÐ°Ð·Ð°Ð½Ð½ÑÐ¹ <br>Ð½Ð¾Ð¼ÐµÑ.
+boxesTab.addBoxWindow.numberOfSmallBoxes=Number of small boxes
+boxesTab.addBoxWindow.numberOfMiddleBoxes=Number of middle boxes
+boxesTab.addBoxWindow.numberOfBoxes=Number of boxes
+boxesTab.addBoxWindow.numberOfLargeBoxes=Number of large boxes
+boxesTab.addBoxWindow.comment=Comment
+boxesTab.addBoxWindow.numberOfBoxesInvalid=Should be integer number within range 1 to 999
+boxesTab.addBoxWindow.okButton=Ok
+boxesTab.addBoxWindow.cancelButton=Cancel
+boxesTab.client=Client
+boxesTab.nearestPostOfficesButton=Find nearest Post Offices
+boxesTab.addBoxWindow.typeSelection=Choose request's type
+boxesTab.addBoxWindow.desiredNumber=Desired box's number
+boxesTab.addBoxWindow.numberExpected=A number without leading zeros is expected
+boxesTab.addBoxWindow.numberExists=Ð¯ÑÐµÐ¹ÐºÐ° Ñ ÑÐºÐ°Ð·Ð°Ð½Ð½ÑÐ¼ Ð½Ð¾Ð¼ÐµÑÐ¾Ð¼ ÑÐ¶Ðµ ÑÑÑÐµÑÑÐ²ÑÐµÑ. ÐÑÐ¾Ð´Ð¾Ð»Ð¶ÐµÐ½Ð¸Ðµ Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾.
+boxesTab.addBoxWindow.numberExistsAndIsLiquidated=Ð¯ÑÐµÐ¹ÐºÐ° Ñ ÑÐºÐ°Ð·Ð°Ð½Ð½ÑÐ¼ Ð½Ð¾Ð¼ÐµÑÐ¾Ð¼ ÑÑÑÐµÑÑÐ²ÑÐµÑ Ð¸ Ð½Ð°ÑÐ¾Ð´Ð¸ÑÑÑ Ð² ÑÑÐ°ÑÑÑÐµ "ÐÐ¸ÐºÐ²Ð¸Ð´Ð¸ÑÐ¾Ð²Ð°Ð½Ð°". ÐÐ¾ÑÑÑÐ°Ð½Ð¾Ð²Ð¸ÑÑ ÑÑÐµÐ¹ÐºÑ?
+boxesTab.addBoxWindow.yes=ÐÐ°
+boxesTab.addBoxWindow.no=ÐÐµÑ
+
+boxesTab.addButton=Add
+boxesTab.delButton=Del
+boxesTab.reserveButton=Reserve
+boxesTab.repairButton=Put under repair
+boxesTab.outOfRepairButton=Set out of repair
+boxesTab.attachFileButton=Attach a file
+boxesTab.BoxInfoWindowTitle=Box's info
+boxesTab.BoxInfoWindow.downloadError= Couldn't download file
+boxesTab.reservationBlockedByStatusError=Box(es) â{0} changed its(their) status while you were filling in.
+boxesTab.reservationBlockedByRepairError=Box(es) â{0} were moved to repair.
+boxesTab.reservationBlockedErrorAppendix=Please choose (an)other Box(es).
+boxesTab.reservationBlockedErrorFoundActiveClaim=ÐÑÐ¾ÑÐ¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ð¹ Ð½Ð° Ð´Ð°Ð½Ð½ÑÑ ÑÑÐµÐ¹ÐºÑ ({0}) Ð²ÑÐµÐ¼ÐµÐ½Ð½Ð¾ Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾
+
+boxesTab.boxNumber=Number
+boxesTab.status=Status
+boxesTab.size=Size
+boxesTab.releaseDate=Release Date
+boxesTab.startRepairDate=Start Repair Date
+boxesTab.underRepair=Under Repair
+boxesTab.price=Price
+boxesTab.RequestCreated=Created a request with number:
+boxesTab.doNotMixDifferentTypesError=ÐÐµÐ»ÑÐ·Ñ ÑÐµÐ·ÐµÑÐ²Ð¸ÑÐ¾Ð²Ð°ÑÑ Ð² Ð¾Ð´Ð½Ð¾Ð¼ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ð¸ Ð¸ ÑÑÐ°ÑÐ¸Ð¾Ð½Ð°ÑÐ½ÑÐµ Ð¸ ÐÐÐÐ¡ ÑÑÐµÐ¹ÐºÐ¸
+boxesTab.doNotMixDifferentAapsTypesError=ÐÐµÐ»ÑÐ·Ñ ÑÐµÐ·ÐµÑÐ²Ð¸ÑÐ¾Ð²Ð°ÑÑ Ð² Ð¾Ð´Ð½Ð¾Ð¼ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ð¸ ÐÐÐÐ¡ ÑÑÐµÐ¹ÐºÐ¸ ÑÐ°Ð·Ð½Ð¾Ð³Ð¾ ÑÐ¸Ð¿Ð°
+boxesTab.doNotMixDifferentLocationsError=ÐÐµÐ»ÑÐ·Ñ ÑÐµÐ·ÐµÑÐ²Ð¸ÑÐ¾Ð²Ð°ÑÑ Ð² Ð¾Ð´Ð½Ð¾Ð¼ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ð¸ ÐÐÐÐ¡ ÑÑÐµÐ¹ÐºÐ¸ Ð¸Ð· ÑÐ°Ð·Ð½ÑÑ Ð°Ð´ÑÐµÑÐ¾Ð²
+boxesTab.aapshDisabledInPostofficeError=Ð Ð´Ð°Ð½Ð½Ð¾Ð¼ ÐÐÐ¡ Ð½Ðµ ÑÐ°Ð·ÑÐµÑÐµÐ½Ð¾ ÑÐµÐ·ÐµÑÐ²Ð¸ÑÐ¾Ð²Ð°ÑÑ ÐÐÐÐ¡ ÑÑÐµÐ¹ÐºÐ¸
+boxesTab.aapshCellType=Ð¢Ð¸Ð¿ ÐÐÐÐ¡ ÑÑÐµÐ¹ÐºÐ¸
+boxesTab.aapshCellSize=Ð Ð°Ð·Ð¼ÐµÑ ÐÐÐÐ¡ ÑÑÐµÐ¹ÐºÐ¸
+boxesTab.aapshLocationAddress=ÐÐ´ÑÐµÑ ÑÐºÐ°ÑÐ°
+boxesTab.reservationBlockedInactiveLocker=ÐÑÐ±ÑÐ°Ð½Ð° ÑÑÐµÐ¹ÐºÐ° Ð¸Ð· Ð½ÐµÐ°ÐºÑÐ¸Ð²Ð½Ð¾Ð³Ð¾ ÑÐºÐ°ÑÐ° ÐÐÐÐ¡
+boxesTab.aapshOrOrdinary=ÐÐÐÐ¡
+boxesTab.grid.lockerPresent=ÐÐÐÐ¡
+boxesTab.grid.lockerNotPresent=ÐÐ±ÑÑÐ½ÑÐ¹
+aapshTroubleReportButton.download=Ð¡ÐºÐ°ÑÐ°ÑÑ XLS
+boxesTab.aapsh.cellType=Ð¢Ð¸Ð¿ ÑÑÐµÐ¹ÐºÐ¸
+
+boxesTab.addBoxToClaimWindow.caption=Add boxes to claim
+boxesTab.addBoxToClaimWindow.chooseSmall=Choose small
+boxesTab.addBoxToClaimWindow.chooseMedium=Choose medium
+boxesTab.addBoxToClaimWindow.chooseABox=Choose a box
+boxesTab.addBoxToClaimWindow.chooseBig=Choose big
+boxesTab.addBoxToClaimWindow.addSmall=Add small box
+boxesTab.addBoxToClaimWindow.addMedium=Add medium box
+boxesTab.addBoxToClaimWindow.addABox=Add a box
+boxesTab.addBoxToClaimWindow.addBig=Add big box
+boxesTab.addBoxToClaimWindow.addedSmall=Added small box with number:
+boxesTab.addBoxToClaimWindow.addedMedium=Added medium box with number:
+boxesTab.addBoxToClaimWindow.BoxAdded=Added a box with number:
+boxesTab.addBoxToClaimWindow.addedBig=Added big box with number:
+boxesTab.addBoxToClaimWindow.changedState=Box changed state and can't be chosen any longer:
+boxesTab.boxesTab.claimCantBeEditedCaption=Warning
+boxesTab.claimOutOfEditingModeText=This claim was saved more than ${quartz-scheduler.inEditingThreshold} minutes ago<br> last time, you can proceed it from the tab Claims.
+boxesTab.claimCancelledText=This claim was saved more than ${quartz-scheduler.inProcessThreshold.minutes} minutes ago<br> last time, it has been automatically cancelled.
+boxesTab.claimAwaitsPaymentText=This claim was saved more than ${quartz-scheduler.inProcessThreshold.minutes} minutes ago<br> last time, it has been automatically assigned with status Awaiting Payment.
+boxesTab.claimEditedByAnotherUserText=This claim has been opened for editing by another user.
+
+boxesTab.saveAsExcel.button=ÐÑÐ³ÑÑÐ·ÐºÐ° ÑÑÐµÐµÐº Ð² Excel
+boxesTab.saveAsExcel.sheetTitle=ÐÐ¯ Ð´Ð»Ñ Ð¾ÑÐ´ÐµÐ»ÐµÐ½Ð¸Ñ {0}
+boxesTab.saveAsExcel.headerForOperator=â Ð°/Ñ;Ð¡ÑÐ°ÑÑÑ;ÐÐ»Ð¸ÐµÐ½Ñ;Ð¢Ð¸Ð¿ ÐºÐ»Ð¸ÐµÐ½ÑÐ°;ÐÐ°ÑÐ° Ð½Ð°ÑÐ°Ð»Ð° Ð°Ð±Ð¾Ð½Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ;ÐÐ°ÑÐ° Ð¾ÐºÐ¾Ð½ÑÐ°Ð½Ð¸Ñ Ð°Ð±Ð¾Ð½Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ;ÐÑÐ¸Ð·Ð½Ð°Ðº "Ð² ÑÐµÐ¼Ð¾Ð½ÑÐµ";ÐÐ¾Ð½ÑÐ°ÐºÑÐ½Ð¾Ðµ Ð»Ð¸ÑÐ¾;ÐÐ¾Ð¼ÐµÑ ÑÐµÐ»ÐµÑÐ¾Ð½Ð°;e-mail;ÐÐ¾Ð¿. ÑÑÐ»ÑÐ³Ð¸
+boxesTab.saveAsExcel.headerForAdmin=ÐÐ Ð¦;Ð£Ð¤ÐÐ¡;ÐÐ¾ÑÑÐ°Ð¼Ñ;ÐÐÐ¡;â Ð°/Ñ;Ð¡ÑÐ°ÑÑÑ;ÐÐ»Ð¸ÐµÐ½Ñ;Ð¢Ð¸Ð¿ ÐºÐ»Ð¸ÐµÐ½ÑÐ°;ÐÐ°ÑÐ° Ð½Ð°ÑÐ°Ð»Ð° Ð°Ð±Ð¾Ð½Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ;ÐÐ°ÑÐ° Ð¾ÐºÐ¾Ð½ÑÐ°Ð½Ð¸Ñ Ð°Ð±Ð¾Ð½Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ;ÐÑÐ¸Ð·Ð½Ð°Ðº "Ð² ÑÐµÐ¼Ð¾Ð½ÑÐµ";ÐÐ¾Ð½ÑÐ°ÐºÑÐ½Ð¾Ðµ Ð»Ð¸ÑÐ¾;ÐÐ¾Ð¼ÐµÑ ÑÐµÐ»ÐµÑÐ¾Ð½Ð°;e-mail;ÐÐ¾Ð¿. ÑÑÐ»ÑÐ³Ð¸
+boxesTab.saveAsExcel.isInRepair=Ð² ÑÐµÐ¼Ð¾Ð½ÑÐµ
+boxesTab.saveAsExcel.notification.caption=ÐÐ½ÑÐ¾ÑÐ¼Ð°ÑÐ¸Ñ
+boxesTab.saveAsExcel.claims.found=ÐÐ±ÑÐ°Ð±Ð°ÑÑÐ²Ð°ÑÑÑÑ Ð´Ð°Ð½Ð½ÑÐµ Ð¾ {0} ÐÐ¯
+boxesTab.saveAsExcel.firstLine=ÐÑÐ³ÑÑÐ·ÐºÐ° ÑÑÐµÐµÐº Ð² Excel Ð½Ð° Ð´Ð°ÑÑ {0} Ð¿Ð¾ "{1}" "{2}"
+boxesTab.saveAsExcel.dataProcessingStarted=ÐÐ°Ð¿ÑÑÐµÐ½Ð° Ð²ÑÐ³ÑÑÐ·ÐºÐ° ÑÑÐµÐµÐº Ð² ÑÐ°Ð¹Ð»
+boxesTab.saveAsExcel.fileNameForAdmin=po_boxes_{0}_{1}.xlsx
+boxesTab.saveAsExcel.fileReady=Ð¤Ð°Ð¹Ð» Ñ ÐÐ¯ Ð³Ð¾ÑÐ¾Ð² Ðº ÑÐºÐ°ÑÐ¸Ð²Ð°Ð½Ð¸Ñ.
+boxesTab.saveAsExcel.notification.internalError=ÐÐ½ÑÑÑÐµÐ½Ð½ÑÑ Ð¾ÑÐ¸Ð±ÐºÐ°. ÐÐµ ÑÐ´Ð°Ð»Ð¾ÑÑ ÑÑÐ¾ÑÐ¼Ð¸ÑÐ¾Ð²Ð°ÑÑ ÑÐ°Ð¹Ð» Ð´Ð»Ñ ÑÐºÐ°ÑÐ¸Ð²Ð°Ð½Ð¸Ñ
+boxesTab.saveAsExcel.ops.found=ÐÐ±ÑÐ°Ð±Ð°ÑÑÐ²Ð°ÑÑÑÑ Ð´Ð°Ð½Ð½ÑÐµ Ð¾ {0} ÐÐÐ¡
+boxesTab.saveAsExcel.boxes.found=ÐÐ±ÑÐ°Ð±Ð°ÑÑÐ²Ð°ÑÑÑÑ Ð´Ð°Ð½Ð½ÑÐµ Ð¾ {0} ÐÐ¯
+boxesTab.cantHighlightMoreThanOneBox=ÐÐ¾Ð´ÑÐ²ÐµÑÐµÐ½Ð° ÑÐ¾Ð»ÑÐºÐ¾ Ð¾Ð´Ð½Ð° ÐÐ¯ Ð¸Ð· {0}
+boxesTab.sortingRegister.button=Ð¡Ð¾ÑÑÐ¸ÑÐ¾Ð²Ð¾ÑÐ½ÑÐ¹ ÑÐµÐµÑÑÑ
+
+claimsTab.claimNumber=Number
+claimsTab.createDate=Create date
+claimsTab.status=Status
+claimsTab.refund=Refund
+claimsTab.client=Client
+claimsTab.employee=Operator
+claimsTab.refusalImpossible=It is impossible to refuse the payment for this claim
+
+#ApproveRefundWindow
+claimsTab.ApproveRefundWindow.caption=Refund approval
+claimsTab.ApproveRefundWindow.receiptNumber=Receipt number
+claimsTab.ApproveRefundWindow.resolutionDate=Refund date
+claimsTab.ApproveRefundWindow.okButtonCaption=OK
+claimsTab.ApproveRefundWindow.cancelButtonCaption=Cancel
+claimsTab.ApproveRefundWindow.failed=Couldn't carry out operation of refusal for the claim
+
+#ConfirmPaymentWindow
+claimsTab.ConfirmPaymentWindow.title=Confirm payment
+
+claimsTab.ConfirmPaymentWindow.authorizedPersonLabel=Authorized person
+claimsTab.ConfirmPaymentWindow.firstName=Name
+claimsTab.ConfirmPaymentWindow.middleName=Middle name
+claimsTab.ConfirmPaymentWindow.lastName=Last name
+
+claimsTab.ConfirmPaymentWindow.procuration.label=Procuration
+claimsTab.ConfirmPaymentWindow.procuration.date=Procuration date
+claimsTab.ConfirmPaymentWindowp.procuration.date.error=Procuration date incorrect
+claimsTab.ConfirmPaymentWindowp.procuration.number=Procuration number
+
+claimsTab.ConfirmPaymentWindow.paymentLabel=Payment document
+claimsTab.ConfirmPaymentWindow.paymentNumber=Payment document number
+claimsTab.ConfirmPaymentWindow.datePaymentError=You can not enter date later than the current date
+claimsTab.ConfirmPaymentWindow.datePayment=Date of payment
+claimsTab.ConfirmPaymentWindow.description=Description of payment
+claimsTab.lengthFieldNumberPayment=The number of payment can not be longer than {0} characters
+claimsTab.uploadFileWindow.caption=ÐÑÐ¸ÐºÑÐµÐ¿Ð»ÐµÐ½Ð¸Ðµ ÑÐ°Ð¹Ð»Ð¾Ð² Ðº Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ
+
+claimsTab.ConfirmPaymentWindow.attention=Attention!
+claimsTab.ConfirmPaymentWindow.printDocument=Print claim document
+#ConfirmPaymentWindow end
+
+claimsTab.recorded.1C=recorded 1C
+claimsTab.recordedTo1CButton= record into 1C
+claimsTab.refreshButton=Clean filter
+
+claimsTab.ClaimInfoWindow.goToBoxesButton=Ð ÑÑÐµÐ¹ÐºÐµ
+claimsTab.ClaimInfoWindow.viewAttachedFiles=ÐÑÐ¸ÐºÑÐµÐ¿. ÑÐ°Ð¹Ð»Ñ
+
+claimsTab.ClaimInfoWindow.title=Claim â{0} details
+claimsTab.ClaimInfoWindow.refusalTitle=Refuse claim â{0}
+claimsTab.ClaimInfoWindow.reallyRefuse=Do you really want to refuse service since {0}?
+claimsTab.ClaimInfoWindow.attention=Attention!
+claimsTab.ClaimInfoWindow.printDocument=Please print refusal document
+claimsTab.ClaimInfoWindow.terminationDate=Termination date
+claimsTab.ClaimInfoWindow.totalCost=Total cost(rubles)
+claimsTab.ClaimInfoWindow.numberOfBoxes= Number of boxes
+claimsTab.ClaimInfoWindow.clientType=client type
+claimsTab.ClaimInfoWindow.client=Full name
+claimsTab.ClaimInfoWindow.addressRegistration=Address
+claimsTab.ClaimInfoWindow.addressFact=Address actual
+claimsTab.ClaimInfoWindow.phoneNumber=Phone number
+claimsTab.ClaimInfoWindow.email=E-mail
+claimsTab.ClaimInfoWindow.status=Status
+claimsTab.ClaimInfoWindow.paymentMethod=Payment method
+claimsTab.ClaimInfoWindow.legal.legalAddress=Legal address
+claimsTab.ClaimInfoWindow.legal.factAddress=Actual adress
+claimsTab.ClaimInfoWindow.legal.contactPerson=Contact person
+claimsTab.ClaimInfoWindow.orgName=Organization
+claimsTab.ClaimInfoWindow.inn=INN
+claimsTab.ClaimInfoWindow.kpp=KPP
+claimsTab.ClaimInfoWindow.bankName=Bank
+claimsTab.ClaimInfoWindow.accountNumber=Account number
+claimsTab.ClaimInfoWindow.correspondenceNumber=Correspondence number
+claimsTab.ClaimInfoWindow.bik=BIK
+claimsTab.ClaimInfoWindow.abonStartDate=Start date
+claimsTab.ClaimInfoWindow.abonEndDate=End date
+claimsTab.ClaimInfoWindow.additionalService=Additional service
+claimsTab.ClaimInfoWindow.boxName=Box {0} name
+claimsTab.ClaimInfoWindow.refundCreateDate=Refund create date
+claimsTab.ClaimInfoWindow.refundDate=Refund date
+claimsTab.ClaimInfoWindow.refundAmount=Refund amount
+claimsTab.ClaimInfoWindow.refundReceiptNumber=Refund receipt number
+claimsTab.ClaimInfoWindow.refundResolutionDate=Refund resolution date
+claimsTab.ClaimInfoWindow.completeRefuseService=Sign away
+claimsTab.ClaimInfoWindow.refuseDate=Refuse date
+claimsTab.ClaimInfoWindow.printRefuseButton=Print claim of refuse of service cancel
+claimsTab.claimChangedStatus=The selected claim changed status to [{0}] and you can't proceed it
+claimsTab.claimsPaymentOrganisationInOps=Invite the organization to pay at the branch
+claimsTab.claimsPaymentOrganisationInOpsDescription=Organization can pay for the service in cash or by credit card â using the "Forsage" transfer. The cost of this service depends on the size of the payment.
+claimsTab.claimsPaymentCantBeConfirmed=The selected claim changed status to [{0}] and you can't confirm its payment.
+claimsTab.outsideThirtyDaysPeriodTitle=Prolongation is impossible
+claimsTab.outsideThirtyDaysPeriodMessage= Prolongation can be performed if not more then {0} days passed from the moment of finishing the claim.
+claimsTab.outsideThreeMonthPeriodMessage=Prolongation can be performed if not more then 3 months left before the moment of finishing the claim.
+claimsTab.claimGotRefused=This claim got refused. You can't prolong it.
+claimsTab.ClaimInfoWindow.refundAmountError=Couldn't calculate refund amount
+claimsTab.ClaimInfoWindow.refundSuccess=Request was sent.
+claimsTab.ClaimInfoWindow.refundError=Error. Please try again later.
+claimsTab.ClaimInfoWindow.numbersOfBoxes="Numbers of boxes"
+claimsTab.ClaimInfoWindow.noData = No data.
+claimsTab.ClaimInfoWindow.noDataExplanation = Complete the claim if it isn't cancelled.
+claimsTab.ClaimInfoWindow.refundPaymentAlreadyCreated=Refund payment with id [{0}] in status [{1}] already created for this claim
+claimsTab.booleanFilter.yes=Yes
+claimsTab.booleanFilter.no=No
+claimsTab.setToPaidQuestion=ÐÑ Ð´ÐµÐ¹ÑÑÐ²Ð¸ÑÐµÐ»ÑÐ½Ð¾ ÑÐ¾ÑÐ¸ÑÐµ Ð¿ÐµÑÐµÐ²ÐµÑÑÐ¸ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ðµ Ð² ÑÑÐ°ÑÑÑ ÐÐ¿Ð»Ð°ÑÐµÐ½Ð¾?
+claimsTab.setToPaidCaption=Ð¢ÑÐµÐ±ÑÐµÑÑÑ Ð¿Ð¾Ð´ÑÐ²ÐµÑÐ¶Ð´ÐµÐ½Ð¸Ðµ
+button2611.someBoxesAreUnderRepairCaption=ÐÐµÐºÐ¾ÑÐ¾ÑÑÐµ ÑÑÐµÐ¹ÐºÐ¸ Ð½Ð°ÑÐ¾Ð´ÑÑÑÑ Ð² ÑÐµÐ¼Ð¾Ð½ÑÐµ
+button2611.wantToProceedWithRepairBoxQuestion=Ð Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ð¸ ÑÑÐµÐ¹ÐºÐ°(Ð¸) â{0} Ð½Ð°ÑÐ¾Ð´Ð¸ÑÑÑ(-ÑÑÑÑ) Ð² ÑÐµÐ¼Ð¾Ð½ÑÐµ. ÐÑ ÑÐ²ÐµÑÐµÐ½Ñ, ÑÑÐ¾ Ð¶ÐµÐ»Ð°ÐµÑÐµ Ð¿ÑÐ¾Ð´Ð¾Ð»Ð¶Ð¸ÑÑ Ð¾ÑÐ¾ÑÐ¼Ð»ÐµÐ½Ð¸Ðµ?
+button2207.dialogWindowCaption=ÐÐ¾Ð¿ÑÐ¾Ñ
+button2207.dialogWindowQuestion=ÐÑ Ð´ÐµÐ¹ÑÑÐ²Ð¸ÑÐµÐ»ÑÐ½Ð¾ Ð¶ÐµÐ»Ð°ÐµÑÐµ Ð¾ÑÐ¼ÐµÐ½Ð¸ÑÑ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ðµ?
+claimsTab.ClaimInfoWindow.paymentApproved=ÐÐ¿Ð»Ð°ÑÐ° Ð·Ð°ÑÐ¸ÐºÑÐ¸ÑÐ¾Ð²Ð°Ð½Ð°
+claimsTab.ClaimInfoWindow.paymentApprovedByEisk=ÐÐÐ¡Ð
+claimsTab.ClaimInfoWindow.paymentApprovedNoData=ÐÐµÑ Ð´Ð°Ð½Ð½ÑÑ
+claimsTab.ClaimInfoWindow.paymentNumber=ÐÐ¾Ð¼ÐµÑ ÐÐ Ð½Ð° Ð¾Ð¿Ð»Ð°ÑÑ
+claimsTab.ClaimInfoWindow.paymentDate=ÐÐ°ÑÐ° ÐÐ Ð½Ð° Ð¾Ð¿Ð»Ð°ÑÑ
+claimsTab.ClaimInfoWindow.paymentComment=ÐÐ¾Ð¼Ð¼ÐµÐ½ÑÐ°ÑÐ¸Ð¹
+
+claimsTab.auditButton=Audit
+claimsTab.auditFileName=ÐÑÑÐ¾ÑÐ¸Ñ_Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ_{0}_Ð²_{1}_{2}.xls
+
+claimsTab.attachFileButton=ÐÑÐ¸ÐºÑÐµÐ¿Ð¸ÑÑ ÑÐ°Ð¹Ð»
+claimsTab.ClaimAttachedFilesWindow.title=ÐÑÐ¸ÐºÑÐµÐ¿Ð»ÐµÐ½Ð½ÑÐµ ÑÐ°Ð¹Ð»Ñ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ {0}
+
+requestsTab.RequestInfoWindow.title=Request â{0} details
+requestsTab.requestNumber=Number of request
+requestsTab.createDate=Create date
+requestsTab.resolveDate=Resolve date
+requestsTab.status=Status
+requestsTab.type=Type
+requestsTab.direction=Direction
+requestsTab.initiator=Initiator
+requestsTab.approver=Approver
+requestsTab.boxToBeDecommissioned=Box to be removed
+requestsTab.numberOfBoxes=Number of boxes
+requestsTab.desiredNumberOfBox=Desired number of the box
+requestsTab.initiatorComment=Initiator's comment
+requestsTab.approverComment=Approver's comment
+requestsTab.initiatorName=Initiator's name
+requestsTab.approverName=Approver's name
+requestsTab.initiatorPostOffice=Initiator post office
+requestsTab.targetPostOffice=Target post office
+requestsTab.directionOutgoing=Outgoing
+requestsTab.directionIncoming=Incoming
+requestsTab.infoButton=Open
+requestsTab.initiatorOfficeIndex=PO index
+requestsTab.auditButton=Audit
+requestsTab.downloadAuditError= Couldn't download file
+# audit_requests_11_v_153013_<date>.xls
+requestsTab.auditFileName=ÐÑÑÐ¾ÑÐ¸Ñ_Ð·Ð°ÑÐ²ÐºÐ¸_{0}_Ð²_{1}_{2}.xls
+requestsTab.loadStaleCaption=ÐÐ°Ð³ÑÑÐ¶Ð°ÑÑ ÑÑÑÐ°ÑÐµÐ²ÑÐ¸Ðµ ÑÐ°ÑÑÐ¼Ð¾ÑÑÐµÐ½Ð½ÑÐµ Ð·Ð°ÑÐ²ÐºÐ¸
+requestsTab.loadingEnded=ÐÐ°Ð³ÑÑÐ·ÐºÐ° Ð·Ð°Ð²ÐµÑÑÐµÐ½Ð°. ÐÐ°Ð¹Ð´ÐµÐ½Ð¾ {0} {1}
+requestsTab.willNotLoadStaleCaption=Ð¡Ð¾Ð³Ð»Ð°ÑÐ¾Ð²Ð°Ð½Ð½ÑÐµ/Ð¾ÑÐºÐ»Ð¾Ð½ÐµÐ½Ð½ÑÐµ Ð±Ð¾Ð»ÐµÐµ 2-Ñ Ð´Ð½ÐµÐ¹ Ð½Ð°Ð·Ð°Ð´ Ð·Ð°ÑÐ²ÐºÐ¸ Ð² ÑÐ°Ð±Ð»Ð¸ÑÐµ Ð½Ðµ Ð¾ÑÐ¾Ð±ÑÐ°Ð¶Ð°ÑÑÑÑ. ÐÐ½Ð¸ Ð´Ð¾ÑÑÑÐ¿Ð½Ñ Ð´Ð»Ñ ÑÐºÐ°ÑÐ¸Ð²Ð°Ð½Ð¸Ñ Ð¿Ð¾ ÐºÐ½Ð¾Ð¿ÐºÐµ "ÐÑÐ³ÑÑÐ·ÐºÐ° Ð²ÑÐµÑ Ð·Ð°ÑÐ²Ð¾Ðº
+requestsTab.downloadAllRequestsReport=ÐÑÐ³ÑÑÐ·ÐºÐ° Ð²ÑÐµÑ Ð·Ð°ÑÐ²Ð¾Ðº
+requestsTab.boxNumbers=ÐÐ¾Ð¼ÐµÑÐ° ÐÐ¯
+requestsTab.boxNumber=ÐÐ¾Ð¼ÐµÑ Ð°/Ñ
+requestsTab.listOfAproved=ÐÐ°ÑÐ²ÐºÐ¸ Ñ Ð½Ð¾Ð¼ÐµÑÐ°Ð¼Ð¸: ({0}) - Ð±ÑÐ»Ð¸ ÑÐ¾Ð³Ð»Ð°ÑÐ¾Ð²Ð°Ð½Ñ
+requestsTab.listOfDeclined=ÐÐ°ÑÐ²ÐºÐ¸ Ñ Ð½Ð¾Ð¼ÐµÑÐ°Ð¼Ð¸: ({0}) - Ð±ÑÐ»Ð¸ Ð¾ÑÐºÐ»Ð¾Ð½ÐµÐ½Ñ
+
+requestsInfoWindow.approveButton=Approve
+requestsInfoWindow.rejectButton=Reject
+requestsInfoWindow.commentIsEmpty=Approver's comment is empty!
+
+#ÐÐ»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð¿ÑÐ¾ÑÑÑÑ Ð¾ÑÐ¿ÑÐ°Ð²Ð»ÐµÐ½Ð¸Ð¹
+ordinaryMailingsTab.attachMails=ÐÐ»Ð¾Ð¶Ð¸ÑÑ Ð¾ÑÐ¿ÑÐ°Ð²Ð»ÐµÐ½Ð¸Ñ
+ordinaryMailingsTab.boxNumber=â Ð°/Ñ
+ordinaryMailingsTab.lastAttachDate=ÐÐ°ÑÐ° Ð¿Ð¾ÑÐ»ÐµÐ´Ð½ÐµÐ³Ð¾ Ð²Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð¾ÑÐ¿ÑÐ°Ð²Ð»ÐµÐ½Ð¸Ð¹
+ordinaryMailingsTab.clientFullName=ÐÐ»Ð¸ÐµÐ½Ñ
+ordinaryMailingsTab.status=Ð¡ÑÐ°ÑÑÑ
+ordinaryMailingsTab.approve.caption=ÐÐ»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð¾ÑÐ¿ÑÐ°Ð²Ð»ÐµÐ½Ð¸Ð¹
+ordinaryMailingsTab.approve.text=ÐÑ ÑÐ²ÐµÑÐµÐ½Ñ, ÑÑÐ¾ Ð¾ÑÑÑÐµÑÑÐ²Ð»ÐµÐ½Ð¾ Ð²Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð¿ÑÐ¾ÑÑÑÑ Ð¾ÑÐ¿ÑÐ°Ð²Ð»ÐµÐ½Ð¸Ð¹ Ð² {0}?
+
+field.required=Required
+field.notCorrect=Incorrect data
+fieldPhoneFormat=Use format: operator code and phone number
+field.lengthExceeded=Length of the field shouldn't be more than {0}
+fields.required=Fill all required fields
+field.lengthNotInRange=The length of the text typed in the field [{2}] is supposed to be within the range from {0} to {1} characters
+
+button.phoneNumberNotSpecified=ÐÐµ ÑÐºÐ°Ð·Ð°Ð½ Ð½Ð¾Ð¼ÐµÑ ÑÐµÐ»ÐµÑÐ¾Ð½Ð°. ÐÑÐµÐ´ÑÐ¿ÑÐµÐ´Ð¸ÑÐµ ÐºÐ»Ð¸ÐµÐ½ÑÐ°, ÑÑÐ¾ Ð½Ðµ Ð²ÑÐµ ÑÑÐ½ÐºÑÐ¸Ð¸ Ð¿Ð¾ ÑÑÐ»ÑÐ³Ðµ Ð±ÑÐ´ÑÑ Ð´Ð¾ÑÑÑÐ¿Ð½Ñ. ÐÐ»Ñ Ð¿ÑÐ¾Ð´Ð¾Ð»Ð¶ÐµÐ½Ð¸Ñ Ð½Ð°Ð¶Ð¼Ð¸ÑÐµ Â«ÐÐ°Ð»ÐµÐµÂ» Ð¸Ð»Ð¸ Ð²Ð²ÐµÐ´Ð¸ÑÐµ Ð½Ð¾Ð¼ÐµÑ ÑÐµÐ»ÐµÑÐ¾Ð½Ð°.
+
+
+reserveBoxView.headerString=Box reservation. Claim â
+reserveBoxView.checkClientWarning = Check client identity!
+abonFirstStep.clientTypeLabel=Client type:
+abonFirstStep.totalAmountOfMoneyLabel=Total amount (roubles)
+abonFirstStep.numberOfBoxesLabel=Number of boxes
+abonFirstStep.AddBoxLabel=Add a box
+abonFirstStep.BoxsNumberLabel=Box's number
+abonFirstStep.BoxsSizeLabel=Size
+abonFirstStep.rentPeriod=ÐÐµÑÐ¸Ð¾Ð´ Ð°ÑÐµÐ½Ð´Ñ
+abonFirstStep.createDateLabel=Create date
+abonFirstStep.startDateLabel=Start date
+abonFirstStep.endDateLabel=End date
+abonFirstStep.termLabel=Term of reservation (months)
+abonFirstStep.bosxsPriceLabel=Price (roubles)
+abonFirstStep.maxTerm=12
+abonFirstStep.startDateError=You can't specify date from the past and later than 2 months from today
+abonFirstStep.startDateNullError=Start date is an obligatory field
+abonFirstStep.failedToCreateAClaim=Couln't create a claim
+abonFirstStep.CancelReservationCaption=Cancellation of reservation
+abonFirstStep.CancelReservationQuestion=Are you sure you want to cancel reservation of Boxes?
+abonFirstStep.boxesInRepairWindowTitle=Some boxes are in repair
+abonFirstStep.boxesInRepairWindowMessage=Box(es) â{0} is(are) in repair. Do you want to continue?"
+abonFirstStep.boxesPriceError=Couldn't calculate price
+abonFirstStep.moreThanXBoxesError=You can select {0} box(es) maximum for a claim
+abonFirstStep.boxNameMustBeUniqueInClaimError=Box name must be unique in claim
+abonFirstStep.boxNameMustBeUniqueInDepartmentError=The name of the cell [{0}] is already occupied in the department [{1}]
+abonFirstStep.additionalServices=Additional services:
+abonFirstStep.additionalServiceHint=* When you select an additional service, it applies to all cells
+abonFirstStep.trayNotificationWarning=ÐÐ½Ð¸Ð¼Ð°Ð½Ð¸Ðµ! Ð ÑÐ»ÑÑÐ°Ðµ Ð¾ÑÑÑÑÑÑÐ²Ð¸Ñ Ð¾Ð¿ÐµÑÐ°ÑÐ¸Ð¹ Ñ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸ÐµÐ¼ Ð² ÑÐµÑÐµÐ½Ð¸Ðµ ${quartz-scheduler.inProcessThreshold.minutes} Ð¼Ð¸Ð½ÑÑ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ðµ Ð±ÑÐ´ÐµÑ Ð°Ð²ÑÐ¾Ð¼Ð°ÑÐ¸ÑÐµÑÐºÐ¸ Ð¾ÑÐ¼ÐµÐ½ÐµÐ½Ð¾
+
+abonSecondStep.passportSearch=ÐÐ¾Ð¸ÑÐº Ð¿Ð°ÑÐ¿Ð¾ÑÑÐ°s
+abonSecondStep.firstName=First name
+abonSecondStep.middleName=Middle name
+abonSecondStep.lastName=Last name
+abonSecondStep.regAddress=Address
+abonSecondStep.factAddress=Residential address
+abonSecondStep.phoneNumber=Phone number
+abonSecondStep.email=E-mail
+abonSecondStep.accountBoundary=Some fields are disabled since this account is connected to Portal account or data is confirmed
+abonSecondStep.documentNumber=document number
+abonSecondStep.passportSeriesAndNumber=Passport series and number
+abonSecondStep.passportSeriesAndNumberPrompt=10 ÑÐ¸ÑÑÐ¾Ð²ÑÑ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð² Ð±ÐµÐ· Ð¿ÑÐ¾Ð±ÐµÐ»Ð¾Ð²
+abonSecondStep.clientNotFound=Client wasn't found. You are about to create a new one. Double check entered data.
+abonSecondStep.passportIssuedDate= Issued date
+abonSecondStep.passportIssuedDateError= Issued date cannot be in the future
+abonSecondStep.passportIssuedDateParseError=Invalid date format
+abonSecondStep.passportIssuedAuthority=Issued authority
+abonSecondStep.passportDepartmentCode=ÐÐ¾Ð´ Ð¿Ð¾Ð´ÑÐ°Ð·Ð´ÐµÐ»ÐµÐ½Ð¸Ñ
+abonSecondStep.passportDepartmentCode.prompt=Ð¤Ð¾ÑÐ¼Ð°Ñ ÐºÐ¾Ð´Ð° Ð¿Ð¾Ð´ÑÐ°Ð·Ð´ÐµÐ»ÐµÐ½Ð¸Ñ _ _ _ - _ _ _
+abonSecondStep.passportBirthDate=ÐÐ°ÑÐ° ÑÐ¾Ð¶Ð´ÐµÐ½Ð¸Ñ
+abonSecondStep.passportDepartmentCodeFormat=ÐÐ²ÐµÐ´Ð¸ÑÐµ ÐºÐ¾Ð´ Ð¿Ð¾Ð´ÑÐ°Ð·Ð´ÐµÐ»ÐµÐ½Ð¸Ñ Ð² Ð²Ð¸Ð´Ðµ 111-222
+abonSecondStep.passportSeriesNumeberFormat =  Fill series and number without blanks
+abonSecondStep.personalDataLabel=Personal data
+abonSecondStep.contactDataLabel=Contact data
+desc.fieldIsInactive.runSearch=ÐÐ¾Ð»Ðµ Ð²Ð²Ð¾Ð´Ð° Ð½ÐµÐ°ÐºÑÐ¸Ð²Ð½Ð¾, Ñ.Ðº. Ð²Ð°Ð¼ Ð½ÑÐ¶Ð½Ð¾ ÑÐ½Ð°ÑÐ°Ð»Ð° Ð²Ð²ÐµÑÑÐ¸ ÑÐµÑÐ¸Ñ Ð¸ Ð½Ð¾Ð¼ÐµÑ Ð¿Ð°ÑÐ¿Ð¾ÑÑÐ° ÐºÐ»Ð¸ÐµÐ½ÑÐ° Ð¸ Ð·Ð°Ð¿ÑÑÑÐ¸ÑÑ Ð¿Ð¾Ð¸ÑÐº Ð¿Ð¾ Ð½Ð¸Ð¼ (ÐºÑÐ°ÑÐ½Ð°Ñ ÐºÐ½Ð¾Ð¿ÐºÐ° Ñ Ð»ÑÐ¿Ð¾Ð¹)
+
+abonSecondStep.registrationDataLabel=Ð ÐµÐ³Ð¸ÑÑÑÐ°ÑÐ¸Ð¾Ð½Ð½ÑÐµ Ð´Ð°Ð½Ð½ÑÐµ
+abonSecondStep.OGRN=ÐÐÐ Ð
+abonSecondStep.OKATO=ÐÐÐÐ¢Ð
+abonSecondStep.OKTMO=ÐÐÐ¢ÐÐ
+
+abonSecondStep.organisationLabel=Organization
+abonSecondStep.legalAddress=Legal address
+
+abonSecondStep.authorizedPersonLabel=Authorized person
+abonSecondStep.addressCoincidence=Coincides with residential address
+abonSecondStep.bankLabel=Bank data
+abonSecondStep.orgName=Organization
+abonSecondStep.innSearch=Search
+abonSecondStep.innSearchFormat=INN consists of 10 or 12 digits
+abonSecondStep.innPrompt = INN
+abonSecondStep.inn=INN
+abonSecondStep.inn.notValid=Invalid INN format
+abonSecondStep.inn.notFound=No organisations found by provided INN
+abonSecondStep.org.doesnotExist=Organization doesn't exist
+abonSecondStep.org.query.must.contain.inn=Query must contain organization's inn
+abonSecondStep.org.auto.prolong.failed=ÐÐ²ÑÐ¾Ð¼Ð°ÑÐ¸ÑÐµÑÐºÐ¾Ðµ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð´Ð°Ð½Ð½ÑÑ Ð¾Ð± Ð¾ÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ð¸ Ð½Ðµ ÑÐ´Ð°Ð»Ð¾ÑÑ.<br>ÐÐµÑÐ¾ÑÑÐ½Ð¾, Ð¾ÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ñ Ð¸Ð·Ð¼ÐµÐ½Ð¸Ð»Ð° Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ.<br>ÐÐ°Ð¼ Ð¿ÑÐ¸Ð´ÐµÑÑÑ ÑÐ´ÐµÐ»Ð°ÑÑ ÑÑÑÐ½Ð¾Ð¹ Ð¿Ð¾Ð¸ÑÐº.<br>Ð¡ÑÑÐ¾ÐºÐ° Ð² Ð¿Ð¾Ð»Ðµ ÐÐ¾Ð¸ÑÐº Ð´Ð¾Ð»Ð¶Ð½Ð° ÑÐ¾Ð´ÐµÑÐ¶Ð°ÑÑ ÐÐÐ Ð¾ÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ð¸ Ð¸Ð· ÑÑÐ°ÑÐ¾Ð³Ð¾ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ.<br>ÐÐ°Ð»ÐµÐµ ÑÐµÑÐµÐ· Ð¿ÑÐ¾Ð±ÐµÐ» Ð²Ñ Ð¼Ð¾Ð¶ÐµÑÐµ ÑÑÐ¾ÑÐ½Ð¸ÑÑ ÐºÑÐ¸ÑÐµÑÐ¸Ð¹ Ð¿Ð¾Ð¸ÑÐºÐ° Ð¸ Ð²Ð²ÐµÑÑÐ¸ Ð½Ð¾Ð²Ð¾Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¾ÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ð¸.<br>ÐÐ¾ÑÐ»Ðµ ÑÑÐ¾Ð³Ð¾ Ð½Ð°Ð¶Ð¼Ð¸ÑÐµ ÐºÐ½Ð¾Ð¿ÐºÑ Ð¿Ð¾Ð¸ÑÐºÐ°.<br>ÐÐ¾ÑÐ»Ðµ Ð¿ÐµÑÐµÑÐ¾Ð´Ð° Ð½Ð° ÑÐ»ÐµÐ´ÑÑÑÐ¸Ð¹ ÑÐ°Ð³ Ð¿Ð¾Ð¼ÐµÐ½ÑÑÑ Ð¾ÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ñ Ð±ÑÐ´ÐµÑ Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾.
+abonSecondStep.org.auto.prolong.attempted=ÐÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ñ Ð¸Ð· ÑÐ¾Ð´Ð¸ÑÐµÐ»ÑÑÐºÐ¾Ð³Ð¾ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°.<br>ÐÑÐµÐ´Ð¿ÑÐ¸Ð½ÑÑÐ° Ð°Ð²ÑÐ¾Ð¼Ð°ÑÐ¸ÑÐµÑÐºÐ°Ñ Ð¿Ð¾Ð¿ÑÑÐºÐ° Ð½Ð°Ð¹ÑÐ¸ Ð½Ð¾Ð²Ð¾Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¾ÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ð¸. ÐÑÐ¾Ð²ÐµÑÑÑÐµ ÑÐµÐ·ÑÐ»ÑÑÐ°Ñ Ð¿Ð¾Ð¸ÑÐºÐ°.<br>ÐÑÐ»Ð¸ Ð¾Ð½ Ð½Ðµ Ð²ÐµÑÐµÐ½, ÑÐ¾ Ð²Ð²ÐµÐ´Ð¸ÑÐµ ÑÐ²Ð¾Ð¹ Ð²Ð°ÑÐ¸Ð°Ð½Ñ Ð¸ Ð½Ð°Ð¶Ð¼Ð¸ÑÐµ ÐºÐ½Ð¾Ð¿ÐºÑ Ð¿Ð¾Ð¸ÑÐºÐ°.<br>Ð¡ÑÑÐ¾ÐºÐ° Ð² Ð¿Ð¾Ð»Ðµ ÐÐ¾Ð¸ÑÐº Ð´Ð¾Ð»Ð¶Ð½Ð° ÑÐ¾Ð´ÐµÑÐ¶Ð°ÑÑ ÐÐÐ Ð¾ÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ð¸ Ð¸Ð· ÑÑÐ°ÑÐ¾Ð³Ð¾ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ.<br>ÐÐ¾ÑÐ»Ðµ Ð¿ÐµÑÐµÑÐ¾Ð´Ð° Ð½Ð° ÑÐ»ÐµÐ´ÑÑÑÐ¸Ð¹ ÑÐ°Ð³ Ð¿Ð¾Ð¼ÐµÐ½ÑÑÑ Ð¾ÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ñ Ð±ÑÐ´ÐµÑ Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾.
+abonSecondStep.kpp=KPP
+abonSecondStep.kpp.format=KPP contains 9 digits
+abonSecondStep.accountNumber=Account number
+abonSecondStep.accountNumber.prompt=20 ÑÐ¸ÑÑÐ¾Ð²ÑÑ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð² Ð±ÐµÐ· Ð¿ÑÐ¾Ð±ÐµÐ»Ð¾Ð²
+abonSecondStep.correspondenceNumber=Correspondence number
+abonSecondStep.bankName=Bank
+abonSecondStep.bankNotFound=No banks found by provided parameters
+abonSecondStep.bankBik=9 ÑÐ¸ÑÑÐ¾Ð²ÑÑ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð² Ð±ÐµÐ· Ð¿ÑÐ¾Ð±ÐµÐ»Ð¾Ð²
+abonSecondStep.bankBik.notValid=BIK consists of 9 digits
+abonSecondStep.bankSearch=Search
+abonSecondStep.bankBikOrNamePromt=BIK
+abonSecondStep.procuration.label=Procuration
+abonSecondStep.procuration.date=Reception date
+abonSecondStep.procuration.date.parseError=Invalid date format
+abonSecondStep.procuration.number=Procuration number
+abonSecondStep.searchByInnPrompt=Please specify Organization name/INN/Legal address
+abonSecondStep.fieldOrgSearchStringLengthError=ÐÐ»Ð¸Ð½Ð° ÑÑÑÐ¾ÐºÐ¸ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ° Ð½Ðµ Ð´Ð¾Ð»Ð¶Ð½Ð° Ð¿ÑÐµÐ²ÑÑÐ°ÑÑ {0} ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²(Ð°)
+abonSecondStep.ceoLabel=ÐÐµÐ½ÐµÑÐ°Ð»ÑÐ½ÑÐ¹ Ð´Ð¸ÑÐµÐºÑÐ¾Ñ/ÐÐ
+abonSecondStep.ceoName=ÐÐ¼Ñ
+abonSecondStep.ceoPatronym=ÐÑÑÐµÑÑÐ²Ð¾
+abonSecondStep.ceoFamilyName=Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ
+abonSecondStep.kpp.prompt=9 ÑÐ¸ÑÑÐ¾Ð²ÑÑ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð² Ð±ÐµÐ· Ð¿ÑÐ¾Ð±ÐµÐ»Ð¾Ð²
+abonSecondStep.checkbocks.matches.ceo=Ð¡Ð¾Ð²Ð¿Ð°Ð´Ð°ÐµÑ Ñ ÐÐµÐ½ÐµÑÐ°Ð»ÑÐ½ÑÐ¼ Ð´Ð¸ÑÐµÐºÑÐ¾ÑÐ¾Ð¼/ÐÐ
+
+abonThirdStep.claimNumber=Claim number
+abonThirdStep.totalPrice=Total amount (roubles)
+abonThirdStep.payOnAccount=1. Print claim â{0} (in duplicate)</br>2. Print invoice(if client has required it)</br>3. Press "Finish" button
+abonThirdStep.paymentOnDepartment=1. Print claim â{0} (in duplicate)</br>2. Press {1} button
+
+abonThirdStep.discountApply=ÐÑÐµÐ´Ð¾ÑÑÐ°Ð²Ð¸ÑÑ ÑÐºÐ¸Ð´ÐºÑ
+abonThirdStep.discountApplied=Ð¡ÐºÐ¸Ð´ÐºÐ° Ð¿ÑÐµÐ´Ð¾ÑÑÐ°Ð²Ð»ÐµÐ½Ð°
+abonThirdStep.discountCannotAppliedTitle=ÐÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ Ð¿ÑÐµÐ´Ð¾ÑÑÐ°Ð²Ð¸ÑÑ ÑÐºÐ¸Ð´ÐºÑ
+abonThirdStep.discountCannotAppliedMessage=ÐÐ»Ð¸ÐµÐ½Ñ Ð½Ðµ Ð¿Ð¾Ð´ÑÐ¾Ð´Ð¸Ñ Ð¿Ð¾Ð´ ÑÑÐ»Ð¾Ð²Ð¸Ñ Ð°ÐºÑÐ¸Ð¸, ÑÐ°Ðº ÐºÐ°Ðº<br>Ð² Ð¿ÐµÑÐ¸Ð¾Ð´ Ñ 1 Ð°Ð¿ÑÐµÐ»Ñ Ð¿Ð¾ 31 Ð¼Ð°Ñ 2023 Ð³ Ð±ÑÐ» Ð°ÑÐµÐ½Ð´Ð¾Ð²Ð°Ð½ ÑÑÐ¸Ðº
+
+abonThirdStep.reservationConfirmationSubj=ÐÐ¾Ð´ÑÐ²ÐµÑÐ¶Ð´ÐµÐ½Ð¸Ðµ Ð°Ð±Ð¾Ð½Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ ÑÑÐµÐ¹ÐºÐ¸ (Ð°/Ñ)
+abonThirdStep.email.reservationConfirmation=ÐÐ´ÑÐ°Ð²ÑÑÐ²ÑÐ¹ÑÐµ!\n\nÐ¡Ð¿Ð°ÑÐ¸Ð±Ð¾, ÑÑÐ¾ Ð²Ð¾ÑÐ¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°Ð»Ð¸ÑÑ ÑÑÐ»ÑÐ³Ð°Ð¼Ð¸ ÐÐ¾ÑÑÑ Ð Ð¾ÑÑÐ¸Ð¸.\n\nÐÐ°ÑÐµ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ðµ â{0} Ð¾ÑÐ¾ÑÐ¼Ð»ÐµÐ½Ð¾.\nÐ/Ñ: â{1}\n\nÐÐ¿Ð»Ð°ÑÑ Ð°Ð±Ð¾Ð½Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ Ð½ÐµÐ¾Ð±ÑÐ¾Ð´Ð¸Ð¼Ð¾ Ð¿ÑÐ¾Ð¸Ð·Ð²ÐµÑÑÐ¸ Ð´Ð¾ {2}.\n\nÐÑÐ´ÐµÐ»ÐµÐ½Ð¸Ðµ:â{3}\nÐÐ´ÑÐµÑ: {4}\n{5}
+abonThirdStep.email.reservationConfirmationEmailSignature= \n\n---\n\nÐ­ÑÐ¾ Ð¿Ð¸ÑÑÐ¼Ð¾ ÑÑÐ¾ÑÐ¼Ð¸ÑÐ¾Ð²Ð°Ð½Ð¾ Ð°Ð²ÑÐ¾Ð¼Ð°ÑÐ¸ÑÐµÑÐºÐ¸ Ð¸ Ð½Ðµ ÑÑÐµÐ±ÑÐµÑ Ð¾ÑÐ²ÐµÑÐ°
+abonThirdStep.sms.text=ÐÐ¾Ð´ÑÐ²ÐµÑÐ¶Ð´ÐµÐ½Ð¸Ðµ Ð°Ð±Ð¾Ð½Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ\nÐÐ¾Ð¼ÐµÑ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ: {0}\nÐÐ¾Ð´ÑÐ¾Ð±Ð½Ð°Ñ Ð¸Ð½ÑÐ¾ÑÐ¼Ð°ÑÐ¸Ñ Ð¾ÑÐ¿ÑÐ°Ð²Ð»ÐµÐ½Ð° Ð½Ð° ÑÐºÐ°Ð·Ð°Ð½Ð½ÑÐ¹ emailabonThirdStep.PaymentCreatedCaption=Payment has been created:
+abonThirdStep.failedToCreatePayment=Failed to create payment!
+abonThirdStep.notification.success=Notification has been sent
+
+adminHome.postOfficeInfoWindowTitle=Post Office info
+adminHome.postOfficeName=Post office name
+adminHome.postOfficeAddress=Address
+adminHome.postOfficeIndex=Index
+adminHome.postOfficeRegion=Region
+adminHome.postOfficeActive=Is office active?
+adminHome.postOfficeActiveString=Active
+adminHome.postOfficeInactiveString=Inactive
+adminHome.postOfficeAddWindowTitle=Adding a Post office
+adminHome.numberSmallBox=Number of small boxes
+adminHome.numberMediumBox=Number of medium boxes
+adminHome.numberOfBoxes=Number of boxes
+adminHome.numberBigBox=Number of big boxes
+adminHome.postOfficeDeleteWindowTitle=Deletion of a post office
+adminHome.postOfficeDeleteConfirmation=Are you sure you want to delete this post office?
+adminHome.postOfficeAlreadyInactive=This post office is already inactive
+adminHome.invalidIndex=invalid index of post office
+adminHome.invalidNumberBox=invalid number of boxes
+adminHome.invalidFieldsNumberBoxes=at least one of the number of fields must be filled
+adminHome.invalidInternet=invalid internet connection
+adminHome.PostOfficeAdded=Post office added
+adminHome.invalidDepartment=the index of this department already exists
+
+adminHome.postOfficesTab=Post Offices
+adminHome.postOfficesTab.openButton=Open
+adminHome.postOfficeTab.infoButton=Info
+adminHome.postOfficesTab.addButton=Add
+adminHome.postOfficesTab.deleteButton=Delete
+
+adminHome.postOfficesTab.grid.name=Name
+adminHome.postOfficesTab.grid.index=Index
+adminHome.postOfficesTab.grid.address=Address
+adminHome.postOfficesTab.grid.active=Active
+adminHome.postOfficesTab.service.provided=Provided
+adminHome.postOfficesTab.service.not_provided=Not provided
+
+adminHome.postOfficesSearchTab=ÐÐ¾Ð¸ÑÐº Ð¾ÑÐ´ÐµÐ»ÐµÐ½Ð¸Ð¹
+
+askuTab.tabName=ASKU
+askuTab.askuGrid.column.claimNumber=â of claim
+askuTab.askuGrid.column.claimStatus=Claim status
+askuTab.askuGrid.column.mrcIndex=MRC
+askuTab.askuGrid.column.ufpsIndex=UFPS
+askuTab.askuGrid.column.postamtIndex=Postamt
+askuTab.askuGrid.column.opsIndex=Post office
+askuTab.askuGrid.column.messageID=Message ID
+askuTab.askuGrid.column.publishingDate=Publishing createDate
+askuTab.askuGrid.column.error=Error
+askuTab.askuGrid.column.claimCreateDate=Claim create createDate
+askuTab.askuGrid.column.client=Client
+askuTab.askuGrid.column.client.inn=INN
+askuTab.askuGrid.column.boxNumbers=Box number
+askuTab.askuGrid.column.price=Prise
+askuTab.askuGrid.column.error.empty=No response
+
+askuTab.askuGrid.confirmKppButton=Confirm ÐÐÐ
+askuTab.askuGrid.confirmKppWindow=ÐÐ¾Ð´ÑÐ²ÐµÑÐ´Ð¸ÑÑ ÐÐÐ
+askuTab.askuGrid.generateReportButton=Generate report
+askuTab.askuGrid.generateFullXlsButton=Ð¡ÐºÐ°ÑÐ°ÑÑ XLS
+askuTab.askuGrid.generateReportWindow.selectPeriod=ÐÑÐ±ÐµÑÐ¸ÑÐµ Ð¿ÐµÑÐ¸Ð¾Ð´
+askuTab.askuGrid.generateReportWindow.selectMonth=ÐÐµÑÑÑ
+askuTab.askuGrid.generateReportWindow.selectYear=ÐÐ¾Ð´
+askuTab.confirmKppWindow.currentKppIsCorrect=Ð¢ÐµÐºÑÑÐ¸Ð¹ ÐÐÐ ÑÐ²Ð»ÑÐµÑÑÑ ÐºÐ¾ÑÑÐµÐºÑÐ½ÑÐ¼
+askuTab.confirmKppWindow.currentKppIsIncorrect=Ð¢ÐµÐºÑÑÐ¸Ð¹ ÐÐÐ Ð½Ðµ ÑÐ²Ð»ÑÐµÑÑÑ ÐºÐ¾ÑÑÐµÐºÑÐ½ÑÐ¼
+askuTab.confirmKppWindow.correctKpp=ÐÐ¾ÑÑÐµÐºÑÐ½ÑÐ¹ ÐÐÐ
+askuTab.confirmKppWindow.orgName=ÐÐ°Ð¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¾ÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ð¸
+askuTab.confirmKppWindow.inn=ÐÐÐ
+askuTab.confirmKppWindow.contactPerson=ÐÐ¾Ð½ÑÐ°ÐºÑÐ½Ð¾Ðµ Ð»Ð¸ÑÐ¾
+askuTab.confirmKppWindow.phone=ÐÐ¾Ð¼ÐµÑ ÑÐµÐ»ÐµÑÐ¾Ð½Ð°
+askuTab.confirmKppWindow.email=E-mail
+askuTab.kpp.formatError=ÐÐÐ Ð´Ð¾Ð»Ð¶ÐµÐ½ ÑÐ¾ÑÑÐ¾ÑÑÑ Ð¸Ð· 9 ÑÐ¸ÑÑ
+askuExcel.headerTitlesForFullAskuXls=â Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ;Ð¡ÑÐ°ÑÑÑ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ;ÐÐ½Ð´ÐµÐºÑ ÐÐ Ð¦;ÐÐ½Ð´ÐµÐºÑ Ð£Ð¤ÐÐ¡;ÐÐ½Ð´ÐµÐºÑ Ð¿Ð¾ÑÑÐ°Ð¼ÑÐ°;ÐÐ½Ð´ÐµÐºÑ ÐÐÐ¡;ID ÑÐ¾Ð¾Ð±ÑÐµÐ½Ð¸Ñ;ÐÐ°ÑÐ° ÑÐ¾ÑÐ¼Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ ÑÐ¾Ð¾Ð±ÑÐµÐ½Ð¸Ñ;ÐÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð¾ÑÐ¸Ð±ÐºÐ¸;ÐÐ°ÑÐ° Ð¿Ð¾Ð´Ð°ÑÐ¸ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ;ÐÐ»Ð¸ÐµÐ½Ñ;ÐÐÐ;Ð¡ÑÐ¼Ð¼Ð° Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ/Ð²Ð¾Ð·Ð²ÑÐ°ÑÐ°;â ÐÐ¯
+
+asku.dialog.caption=ASKU
+asku.dialog.question=Delete message?
+asku.dialog.okButton=Ok
+asku.dialog.cancelButton=Cancel
+asku.warning.cant.delete.unsent=Ð¡Ð¾Ð¾Ð±ÑÐµÐ½Ð¸Ðµ Ð½ÐµÐ»ÑÐ·Ñ ÑÐ´Ð°Ð»Ð¸ÑÑ, Ð¾Ð½Ð¾ ÐµÑÐµ Ð½Ðµ Ð±ÑÐ»Ð¾ Ð¾ÑÐ¿ÑÐ°Ð²Ð»ÐµÐ½Ð¾ Ð² ÐÐ¡ÐÐ£
+asku.warning.cant.delete.with.kpp.error=Ð¡Ð¾Ð¾Ð±ÑÐµÐ½Ð¸Ðµ Ð½ÐµÐ»ÑÐ·Ñ ÑÐ´Ð°Ð»Ð¸ÑÑ, ÑÑÐµÐ±ÑÐµÑÑÑ Ð¿ÑÐ¾Ð²ÐµÑÐºÐ° ÐºÐ¾ÑÑÐµÐºÑÐ½Ð¾ÑÑÐ¸ ÐÐÐ ÐºÐ»Ð¸ÐµÐ½ÑÐ°
+
+eiskTab.tabName=ÐÐÐ¡Ð
+eiskExcel.titlesForPayments=ÐÐ´. Ð½Ð¾Ð¼ÐµÑ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð² ÑÐ°Ð±Ð»Ð¸ÑÐµ POBOXPAYMENTS(RECNO);ÐÐ´. Ð½Ð¾Ð¼ÐµÑ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð² ÐÐ ÐÐÐ¡Ð(EXP_RECID);Ð¡ÑÐ°ÑÑÑ ÑÐ¾Ð¾Ð±ÑÐµÐ½Ð¸Ñ Ð² ÐÐÐ¡Ð;ÐÐÐ ÐºÐ»Ð¸ÐµÐ½ÑÐ°;ÐÐÐ ÐºÐ»Ð¸ÐµÐ½ÑÐ°;ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¾ÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ð¸;ÐÐ¾Ð´ Ð£Ð¤ÐÐ¡;ÐÐ°ÑÐ° Ð¿Ð»Ð°ÑÐµÐ¶Ð½Ð¾Ð³Ð¾ Ð´Ð¾ÐºÑÐ¼ÐµÐ½ÑÐ°;ÐÐ¾Ð¼ÐµÑ Ð´Ð¾ÐºÑÐ¼ÐµÐ½ÑÐ° Ð¿Ð»Ð°ÑÐµÐ¶Ð°;ÐÐ¾Ð¼ÐµÑ Ð¶ÑÑÐ½Ð°Ð»Ð° ÑÐµÐ³Ð¸ÑÑÑÐ°ÑÐ¸Ð¸ Ð±Ð°Ð½Ðº. Ð²ÑÐ¿Ð¸ÑÐºÐ¸;Ð¡ÑÐ¼Ð¼Ð° Ð¿Ð¾ÑÑÑÐ¿Ð»ÐµÐ½Ð¸Ñ;Ð¡ÑÐ¼Ð¼Ð° ÑÐ¿Ð¸ÑÐ°Ð½Ð¸Ñ;ÐÐ°Ð·Ð½Ð°ÑÐµÐ½Ð¸Ðµ Ð¿Ð»Ð°ÑÐµÐ¶Ð°;ÐÐ¾Ð´ ÐºÐ¾Ð½ÑÑÐ°Ð³ÐµÐ½ÑÐ° Ð² ÐÐÐ¡Ð;ÐÐ°ÑÐ° Ð¸ Ð²ÑÐµÐ¼Ñ ÑÐ¾Ð¿Ð¾ÑÑÐ°Ð²Ð»ÐµÐ½Ð¸Ñ;Ð ÐµÐ·ÑÐ»ÑÑÐ°Ñ ÑÐ¾Ð¿Ð¾ÑÑÐ°Ð²Ð»ÐµÐ½Ð¸Ñ
+eiskExcel.titlesForCriteria=ÐÐ°ÑÐ°;Ð§Ð°ÑÐ¾Ð²Ð¾Ð¹ Ð¿Ð¾ÑÑ;ÐÐ¾Ð´ Ð£Ð¤ÐÐ¡
+eiskTab.search=ÐÐ°Ð¹ÑÐ¸
+eiskTab.saveAsXls=Save as XLS
+eiskTab.date=ÐÐ°ÑÐ° ÑÐ¾Ð¿Ð¾ÑÑÐ°Ð²Ð»ÐµÐ½Ð¸Ñ:
+eiskTab.ufpsCode=ÐÐ¾Ð´ Ð£Ð¤ÐÐ¡:
+eiskTab.found=ÐÐ°Ð¹Ð´ÐµÐ½Ð¾ {0} Ð¿Ð»Ð°ÑÐµÐ¶ÐµÐ¹
+
+eiskTab.eiskGrid.column.recno=ÐÐ¾Ð¼ÐµÑ RECNO
+eiskTab.eiskGrid.column.recid=ÐÐ¾Ð¼ÐµÑ EXP_RECID
+eiskTab.eiskGrid.column.statusEisk=Ð¡ÑÐ°ÑÑÑ ÐÐÐ¡Ð
+eiskTab.eiskGrid.column.inn=ÐÐÐ
+eiskTab.eiskGrid.column.kpp=ÐÐÐ
+eiskTab.eiskGrid.column.orgName=ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¾ÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ð¸
+eiskTab.eiskGrid.column.ufpsCode=ÐÐ¾Ð´ Ð£Ð¤ÐÐ¡
+eiskTab.eiskGrid.column.paymentDate=ÐÐ°ÑÐ° Ð´Ð¾ÐºÑÐ¼ÐµÐ½ÑÐ°
+eiskTab.eiskGrid.column.paymentNumber=ÐÐ¾Ð¼ÐµÑ Ð´Ð¾ÐºÑÐ¼ÐµÐ½ÑÐ°
+eiskTab.eiskGrid.column.numberInJournal=ÐÐ¾Ð¼ÐµÑ Ð¶ÑÑÐ½Ð°Ð»Ð°
+eiskTab.eiskGrid.column.amountCredit=Ð¡ÑÐ¼Ð¼Ð° Ð¿Ð¾ÑÑÑÐ¿Ð»ÐµÐ½Ð¸Ñ
+eiskTab.eiskGrid.column.amountDebit=Ð¡ÑÐ¼Ð¼Ð° ÑÐ¿Ð¸ÑÐ°Ð½Ð¸Ñ
+eiskTab.eiskGrid.column.paymentDetails=ÐÐ°Ð·Ð½Ð°ÑÐµÐ½Ð¸Ðµ
+eiskTab.eiskGrid.column.contractorId=ÐÐ¾Ð´ ÐºÐ¾Ð½ÑÑÐ°Ð³ÐµÐ½ÑÐ°
+eiskTab.eiskGrid.column.datetimeOfResolution=ÐÐ°ÑÐ° ÑÐ¾Ð¿Ð¾ÑÑÐ°Ð²Ð»ÐµÐ½Ð¸Ñ
+eiskTab.eiskGrid.column.resultOfResolution=Ð ÐµÐ·ÑÐ»ÑÑÐ°Ñ ÑÐ¾Ð¿Ð¾ÑÑÐ°Ð²Ð»ÐµÐ½Ð¸Ñ
+
+eiskExcelGeneration.searchCriteriaSheetName=ÐÐ°ÑÐ°Ð¼ÐµÑÑÑ Ð¿Ð¾Ð¸ÑÐºÐ° Ð¿Ð»Ð°ÑÐµÐ¶ÐµÐ¹
+eiskExcelGeneration.searchResultSheetName=Ð ÐµÐ·ÑÐ»ÑÑÐ°ÑÑ Ð¿Ð¾Ð¸ÑÐºÐ° Ð¿Ð»Ð°ÑÐµÐ¶ÐµÐ¹
+
+error.uploadCommentLength=Length of comment must be less 200 characters
+error.accessForbidden=In your post office for reservation service use topic<br><b>Another operations (5) -> Box reservation
+error.externalIntegration=External service is temporary unavailable, please, try again later
+error.multipleAccountsForPassport=For this pasport Pochta ID provides multiple accounts. Can't proceed
+error.accountNotFound=For this pasport Pochta ID key no account was found.
+error.emptyResponseByPostId=ÐÐ°Ð½Ð½ÑÐµ Ð¾ ÐºÐ»Ð¸ÐµÐ½ÑÐµ Ð¾ÑÑÑÑÑÑÐ²ÑÑÑ Ð² ÐÐ¾ÑÑÐ° id
+
+claimSearch.claimNumber=Claim's number
+claimSearch.inn=Inn
+claimSearch.clientsName=Client's name
+claimSearch.boxRanges=Box ranges
+claimSearch.notRecordedIn1c=Not recorded in 1C
+claimSearch.claimStatus=Claim's status
+claimSearch.ufpsName=UFPS
+claimSearch.ufpsIndex=UFPS index
+claimSearch.index=Index of OPS
+claimSearch.boxNumbers=Numbers of PBs
+claimSearch.amountLower=Lower claim's amount
+claimSearch.amountUpper=Upper claim's amount
+claimSearch.clientType=Client's type
+claimSearch.claimType=Claim's type
+claimSearch.claimType.primary=Primary
+claimSearch.claimType.prolongation=Prolongation
+claimSearch.claimCreationDateLower=Lower claim's creation date
+claimSearch.claimCreationDateUpper=Upper claim's creation date
+claimSearch.claimStartDateLower=Lower start date
+claimSearch.claimStartDateUpper=Upper start date
+claimSearch.claimEndDateLower=Lower end date
+claimSearch.claimEndDateUpper=Upper end date
+claimSearch.startDateLabel=Start date
+claimSearch.endDateLabel=End date
+claimSearch.amount=Amount
+claimSearch.advancedSearch=Advanced search
+claimSearch.checked=Checked
+claimSearch.prolongationExecuted=Prolongation executed
+claimSearch.prolongationExecutedTrue=ÐÑÐ¾ÑÐ¼Ð»ÐµÐ½Ð°
+claimSearch.prolongationExecutedFalse=ÐÐµ Ð¾ÑÐ¾ÑÐ¼Ð»ÐµÐ½Ð°
+
+claimSearch.searchButton=Search
+claimSearch.saveAsXls=Save as XLS
+claimSearch.notification=Found {0} claims
+
+claimSearch.innError=ÐÐÐ Ð¸Ð· 10 Ð¸Ð»Ð¸ 12 Ð·Ð½Ð°ÐºÐ¾Ð²
+claimSearch.numberLengthError=Expect from {0} to {1} digits
+claimSearch.clientNameLengthError=Expect {0} characters or more
+claimSearch.numberExactLengthError=Expect {0} digits
+claimSearch.ufpsLengthError=Expect from {0} to {1} characters
+claimSearch.onlyDigitsError=Expect a number with a point as a delimiter
+claimSearch.boxRangesError=Expect list of single numbers or ranges: 1, 12-14, 1ÐÐ¦-32
+claimSearch.required=Please specify correct input values
+claimSearch.dateInTheFutureError=You can't specify date in future
+claimSearch.allFieldsAreNullError=All the search fields are null
+claimSearch.boxRangesLengthError=ÐÐµ Ð±Ð¾Ð»ÐµÐµ 20 Ð·Ð½Ð°ÐºÐ¾Ð²
+claimSearch.manyFoundClaimsCaption=ÐÐ½Ð¸Ð¼Ð°Ð½Ð¸Ðµ
+claimSearch.manyFoundClaimsQuestion=ÐÐ¾Ð»Ð¸ÑÐµÑÑÐ²Ð¾ Ð½Ð°Ð¹Ð´ÐµÐ½Ð½ÑÑ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ð¹ {0} (Ð±Ð¾Ð»ÐµÐµ 20-ÑÐ¸).<br>ÐÐµÐ¾Ð±ÑÐ¾Ð´Ð¸Ð¼Ð¾ Ð²ÑÐ³ÑÑÐ·Ð¸ÑÑ ÑÐ¿Ð¸ÑÐ¾Ðº Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ð¹ Ð² Excel Ð¸Ð»Ð¸ ÑÑÐ¾ÑÐ½Ð¸ÑÑ ÐµÐ³Ð¾ ÐºÑÐ¸ÑÐµÑÐ¸Ð¸.
+claimSearch.manyFoundClaimsContinue=CÐºÐ°ÑÐ°ÑÑ XLS
+claimSearch.manyFoundClaimsNarrowDown=Ð£ÑÐ¾ÑÐ½Ð¸ÑÑ ÐºÑÐ¸ÑÐµÑÐ¸Ð¸
+claimSearch.waitForTheResults=ÐÐ°ÑÐ°Ñ Ð¿Ð¾Ð¸ÑÐº. ÐÐ¾Ð¶Ð´Ð¸ÑÐµÑÑ ÑÐµÐ·ÑÐ»ÑÑÐ°ÑÐ¾Ð²
+
+claimSearch.tooManyConcurrentSearches=Ð£Ð¶Ðµ Ð½Ð°ÑÐ°ÑÐ¾ {0} Ð¿ÑÐ¾ÑÐµÑÑÐ¾Ð²(Ð°) Ð¿Ð¾Ð¸ÑÐºÐ°, Ð¿Ð¾Ð¸ÑÐº Ð½Ðµ Ð±ÑÐ´ÐµÑ Ð½Ð°ÑÐ°Ñ.<br> ÐÐ¾Ð²ÑÐ¾ÑÐ¸ÑÐµ Ð¿Ð¾Ð¿ÑÑÐºÑ ÑÐµÑÐµÐ· Ð½ÐµÑÐºÐ¾Ð»ÑÐºÐ¾ Ð¼Ð¸Ð½ÑÑ.
+
+excelGeneration.RecordedIn1C=recorded
+excelGeneration.notRecordedIn1C=not recorded
+excelGeneration.searchResultSheetName=Result of search
+excelGeneration.searchCriteriaSheetName=Parameters of search
+excelGeneration.titlesForResults=â Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ;ÐÐ½Ð´ÐµÐºÑ ÐÐ Ð¦;ÐÐ½Ð´ÐµÐºÑ Ð£Ð¤ÐÐ¡;ÐÐ½Ð´ÐµÐºÑ Ð¿Ð¾ÑÑÐ°Ð¼ÑÐ°;ÐÐ½Ð´ÐµÐºÑ ÐÐÐ¡;â ÑÑÐµÐ¹ÐºÐ¸;ÐÐ°ÑÐ° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ;ÐÐ°ÑÐ° Ð½Ð°ÑÐ°Ð»Ð° Ð°Ð±Ð¾Ð½Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ;ÐÐ°ÑÐ° ÐºÐ¾Ð½ÑÐ° Ð°Ð±Ð¾Ð½Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ñ;Ð¢Ð¸Ð¿ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ;ÐÑÐ¾ÑÐ¼Ð»ÐµÐ½Ð° Ð¿ÑÐ¾Ð»Ð¾Ð½Ð³Ð°ÑÐ¸Ñ;Ð¡ÑÐ°ÑÑÑ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ;ÐÐÐ;Ð¢Ð¸Ð¿ ÐºÐ»Ð¸ÐµÐ½ÑÐ°;ÐÐ»Ð¸ÐµÐ½Ñ;Ð¤ÐÐ ÑÐ¾ÑÑÑÐ´Ð½Ð¸ÐºÐ°;Ð¡ÑÐ¾Ð¸Ð¼Ð¾ÑÑÑ;ÐÐ°Ð½ÐµÑÐµÐ½Ð¾ Ð² 1Ð¡ ÐÐ¡ÐÐ£;
+excelGeneration.titlesForCriteria=â Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ;ÐÐµ Ð·Ð°Ð½ÐµÑÐµÐ½Ð¾ Ð² 1Ð¡;Ð¢Ð¸Ð¿ ÐºÐ»Ð¸ÐµÐ½ÑÐ°;ÐÐ½Ð½;ÐÐ¼Ñ ÐºÐ»Ð¸ÐµÐ½ÑÐ°/Ð¾ÑÐ³Ð°Ð½Ð¸Ð·Ð°ÑÐ¸Ð¸;ÐÐ¾Ð¼ÐµÑÐ° ÐÐ¯;ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð£Ð¤ÐÐ¡;Ð¢Ð¸Ð¿ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ;Ð¡ÑÐ°ÑÑÑ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ;ÐÐ½Ð´ÐµÐºÑ ÐÐÐ¡;ÐÐ¸Ð¶Ð½ÑÑ Ð³ÑÐ°Ð½Ð¸ÑÐ° ÑÐµÐ½Ñ;ÐÐµÑÑÐ½ÑÑ Ð³ÑÐ°Ð½Ð¸ÑÐ° ÑÐµÐ½Ñ;ÐÐ¸Ð¶Ð½ÑÑ Ð³ÑÐ°Ð½Ð¸ÑÐ° Ð´Ð°ÑÑ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ;ÐÐµÑÑÐ½ÑÑ Ð³ÑÐ°Ð½Ð¸ÑÐ° Ð´Ð°ÑÑ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ;ÐÐ¸Ð¶Ð½ÑÑ Ð³ÑÐ°Ð½Ð¸ÑÐ° Ð´Ð°ÑÑ Ð½Ð°ÑÐ°Ð»Ð°;ÐÐµÑÑÐ½ÑÑ Ð³ÑÐ°Ð½Ð¸ÑÐ° Ð´Ð°ÑÑ Ð½Ð°ÑÐ°Ð»Ð°;ÐÐ¸Ð¶Ð½ÑÑ Ð³ÑÐ°Ð½Ð¸ÑÐ° Ð´Ð°ÑÑ ÐºÐ¾Ð½ÑÐ°;ÐÐµÑÑÐ½ÑÑ Ð³ÑÐ°Ð½Ð¸ÑÐ° Ð´Ð°ÑÑ ÐºÐ¾Ð½ÑÐ°;ÐÐ°ÑÐ° Ð¸ Ð²ÑÐµÐ¼Ñ Ð¿Ð¾Ð¸ÑÐºÐ°;ÐÑÐ¸Ð¼ÐµÐ½ÑÐ»Ð¸ÑÑ ÑÐ¸Ð»ÑÑÑÑ;ÐÑÐ¾ÑÐ¼Ð»ÐµÐ½Ð° Ð¿ÑÐ¾Ð»Ð¾Ð½Ð³Ð°ÑÐ¸Ñ
+
+clientSelectWindow.clientSelectionTitle=ÐÑÐ±Ð¾Ñ ÑÐ¸Ð»Ð¸Ð°Ð»Ð°
+clientSelectWindow.clientSelectionLabel=ÐÐ±Ð½Ð°ÑÑÐ¶ÐµÐ½Ð¾ {0} ÑÐ¸Ð»Ð¸Ð°Ð» (-Ð¾Ð², -Ð°) Ð´Ð»Ñ Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾ ÐÐÐ
+clientSelectWindow.orgName=ÐÐ°Ð¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ
+clientSelectWindow.kpp=ÐÐÐ
+clientSelectWindow.legalAddress=Ð®Ñ.Ð°Ð´ÑÐµÑ
+
+postofficeSearch.suggestionField=ÐÐ²ÐµÐ´Ð¸ÑÐµ Ð¸Ð½Ð´ÐµÐºÑ
+postofficeSearch.buttonCaption=ÐÐµÑÐµÑÐ¾Ð´
+postofficeSearch.notFound=ÐÑÐ´ÐµÐ»ÐµÐ½Ð¸Ðµ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾
+postofficeSearch.notFromHierarchy=Ð£ Ð²Ð°Ñ Ð½ÐµÑ Ð¿ÑÐ°Ð² Ð´Ð»Ñ Ð¿ÐµÑÐµÑÐ¾Ð´Ð° Ð² ÑÑÐ¾ Ð¾ÑÐ´ÐµÐ»ÐµÐ½Ð¸Ðµ
+
+createRequest.comboCaption=ÐÑÐ±ÐµÑÐ¸ÑÐµ ÑÐ¸Ð¿ Ð·Ð°ÑÐ²ÐºÐ¸
+createRequest.sendRequest=ÐÑÐ¿ÑÐ°Ð²Ð¸ÑÑ Ð·Ð°ÑÐ²ÐºÑ
+createRequest.cantCreate=ÐÐµ Ð¿Ð¾Ð»ÑÑÐ¸Ð»Ð¾ÑÑ ÑÐ¾Ð·Ð´Ð°ÑÑ Ð·Ð°ÑÐ²ÐºÑ
+createRequest.typeNotChosen=ÐÐµ Ð²ÑÐ±ÑÐ°Ð½ ÑÐ¸Ð¿
+createRequest.emptyInitiatorComment=Ð½Ðµ Ð²Ð²ÐµÐ´ÐµÐ½ ÐºÐ¾Ð¼Ð¼ÐµÐ½ÑÐ°ÑÐ¸Ð¹
+createRequest.rejectProlongationPrint=ÐÐµÑÐ°ÑÑ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ Ð½Ð° Ð¾ÑÐºÐ°Ð·
+createRequest.forcedNonRenewalNotAvailable=ÐÑÐ¸Ð½ÑÐ´Ð¸ÑÐµÐ»ÑÐ½ÑÐ¹ Ð¾ÑÐºÐ°Ð· Ð¾Ñ Ð¿ÑÐ¾Ð»Ð¾Ð½Ð³Ð°ÑÐ¸Ð¸ Ð½Ðµ Ð´Ð¾ÑÑÑÐ¿ÐµÐ½
+createRequest.confirmDialog.dialogWindowCaption=ÐÐ¾Ð´ÑÐ²ÐµÑÐ´Ð¸ÑÐµ Ð¿Ð¾Ð´Ð¿Ð¸ÑÑ Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ñ.
+createRequest.confirmDialog.dialogWindowQuestion=ÐÐ»Ð¸ÐµÐ½Ñ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐ°Ð» Ð·Ð°ÑÐ²Ð»ÐµÐ½Ð¸Ðµ? ÐÑÐ¸ Ð¿ÑÐ¾Ð´Ð¾Ð»Ð¶ÐµÐ½Ð¸Ð¸ ÑÑÐµÐ¹ÐºÐ° Ð¿ÐµÑÐµÐ¹Ð´ÐµÑ Ð² ÑÑÐ°ÑÑÑ "Ð¡Ð²Ð¾Ð±Ð¾Ð´Ð½Ð°"!!!
+
+lockerTab.refreshButton=ÐÐ±Ð½Ð¾Ð²Ð¸ÑÑ
+lockerTab.infoButton=ÐÐ½ÑÐ¾ÑÐ¼Ð°ÑÐ¸Ñ
+lockerTab.address=ÐÐ´ÑÐµÑ
+lockerTab.type=Ð¢Ð¸Ð¿ ÑÐºÐ°ÑÐ°
+lockerTab.status=Ð¡ÑÐ°ÑÑÑ ÑÐºÐ°ÑÐ°
+lockerTab.InfoWindowTitle=ÐÐ½ÑÐ¾ÑÐ¼Ð°ÑÐ¸Ñ
+lockerInfoWindow.goToBoxes=ÐÐµÑÐµÐ¹ÑÐ¸ Ðº ÑÑÐµÐ¹ÐºÐ°Ð¼
+locker.id=ID

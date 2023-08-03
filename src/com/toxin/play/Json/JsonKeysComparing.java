@@ -17,7 +17,7 @@ public class JsonKeysComparing {
 
     public static void main(String[] args) throws Exception {
         final List<String> keysA = getAllKeysOfJson("res/a.json");
-        final List<String> keysB = getAllKeysOfJson("res/B.json");
+        final List<String> keysB = getAllKeysOfJson("res/b.json");
 
         final List<String> errors = searchErrors(keysA, keysB);
 
