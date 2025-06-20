@@ -1,5 +1,8 @@
 package com.toxin.play.MultiThreading;
 
+import java.util.LinkedList;
+import java.util.concurrent.ExecutorService;
+
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         DeveloperJ developerJ = new DeveloperJ();
@@ -19,5 +22,15 @@ public class Main {
         System.out.println("Java - " + developerJ.getCountCode());
         System.out.println("C++ - " + developerC.getCountCode());
         System.out.println("Coffee - " + (developerJ.getCountCode() + developerC.getCountCode()));
+
+        LinkedList<Object> objects = new LinkedList<>();
+
+        objects.add(developerJ);
+        objects.offer(developerC);
+        objects.push(developerC);
+
+        objects.pop();
+        objects.poll();
+        objects.peek();
     }
 }

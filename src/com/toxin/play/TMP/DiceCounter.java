@@ -32,6 +32,8 @@ public class DiceCounter {
                 if (keyCode >= KeyEvent.VK_1 && keyCode <= KeyEvent.VK_6) {
                     String keyChar = String.valueOf(keyEvent.getKeyChar());
                     result.merge(keyChar, 1, Integer::sum);
+
+                    System.out.println("ROLL = " + keyChar);
                 }
 
                 if (keyCode == KeyEvent.VK_ENTER) {
