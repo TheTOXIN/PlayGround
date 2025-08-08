@@ -19,7 +19,11 @@ public class DeadlockExample {
         print("lock1 acquired, waiting to acquire lock2.");
         sleep(50);
 
-        lock2.lock();
+        boolean b = lock2.tryLock();
+        if (!b) {
+            print("lock2 is block");
+            return;
+        }
         print("lock2 acquired");
 
         print("executing first operation.");
@@ -33,7 +37,12 @@ public class DeadlockExample {
         print("lock2 acquired, waiting to acquire lock1.");
         sleep(50);
 
-        lock1.lock();
+        boolean b = lock1.tryLock();
+        if (!b) {
+            print("lock1 is block");
+            return;
+        }
+
         print("lock1 acquired");
 
         print("executing second operation.");
@@ -43,7 +52,7 @@ public class DeadlockExample {
     }
 
     void print(String msg) {
-        System.out.println(msg);
+        System.out.println(msg + " - " + Thread.currentThread().getName());
     }
 
     void sleep(int millis) {
