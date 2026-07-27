@@ -2,7 +2,7 @@ package com.toxin.play.MultiThreading;
 
 import java.util.concurrent.Semaphore;
 
-class Philosopher extends Thread {
+class PhilosopherTask extends Thread {
 
     private final Semaphore sem;
 
@@ -11,7 +11,7 @@ class Philosopher extends Thread {
 
     private final String name;
 
-    Philosopher(Semaphore sem, String name) {
+    PhilosopherTask(Semaphore sem, String name) {
         this.sem = sem;
         this.name = name;
     }
@@ -45,10 +45,10 @@ class Philosopher extends Thread {
     public static void main(String[] args) {
         Semaphore sem = new Semaphore(2, true);
 
-        new Philosopher(sem, "Сократ").start();
-        new Philosopher(sem, "Платон").start();
-        new Philosopher(sem, "Аристотель").start();
-        new Philosopher(sem, "Фалес").start();
-        new Philosopher(sem, "Пифагор").start();
+        new PhilosopherTask(sem, "Сократ").start();
+        new PhilosopherTask(sem, "Платон").start();
+        new PhilosopherTask(sem, "Аристотель").start();
+        new PhilosopherTask(sem, "Фалес").start();
+        new PhilosopherTask(sem, "Пифагор").start();
     }
 }

@@ -1,7 +1,7 @@
 package com.toxin.play.MultiThreading;
 
-public class CoffeeMachine {
-    public static CoffeeMachine machine = new CoffeeMachine();
+public class CoffeeMachineTask {
+    public static CoffeeMachineTask machine = new CoffeeMachineTask();
 
     private volatile double count = 150;
     private volatile boolean isEnd = false;

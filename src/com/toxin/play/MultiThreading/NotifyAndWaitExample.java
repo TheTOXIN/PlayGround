@@ -1,6 +1,6 @@
 package com.toxin.play.MultiThreading;
 
-public class NotifyAndWait {
+public class NotifyAndWaitExample {
 
     private String packet;
 
